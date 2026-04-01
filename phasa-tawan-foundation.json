@@ -1,0 +1,1332 @@
+﻿{
+    "document_name":  "Phasa Tawan Foundation for Nuengdeaw AI",
+    "document_type":  "language-standard-and-manifesto",
+    "version":  "1.0.0",
+    "source_files":  [
+                         "phasa-tawan-foundation.json"
+                     ],
+    "standard":  {
+                     "spec_name":  "Phasa Tawan - Nuengdeaw AI Core Language Standard",
+                     "version":  "1.0.0",
+                     "status":  "active-foundation",
+                     "source":  {
+                                    "type":  "original-base-foundation",
+                                    "path":  "phasa-tawan-foundation.json",
+                                    "generated_at":  "2026-03-26"
+                                },
+                     "identity":  {
+                                      "standardName":  "Phasa Tawan",
+                                      "runtimeName":  "Phasa Tawan for Nuengdeaw AI",
+                                      "lineage_name":  "Phasa Tawan",
+                                      "purpose":  "à¸¡à¸²à¸•à¸£à¸à¸²à¸™à¸ à¸²à¸©à¸²à¸à¸¥à¸²à¸‡à¸ªà¸³à¸«à¸£à¸±à¸šà¸£à¸°à¸šà¸šà¸›à¸£à¸°à¸¡à¸§à¸¥à¸œà¸¥à¸ªà¸±à¸à¸à¸²à¸“à¸Šà¸µà¸§à¸¡à¸²à¸•à¸£à¹à¸¥à¸°à¸ªà¸±à¸à¸à¸²à¸“à¸›à¸£à¸°à¸ªà¸²à¸—",
+                                      "design_intent":  [
+                                                            "à¹ƒà¸Šà¹‰à¹€à¸›à¹‡à¸™à¸ à¸²à¸©à¸²à¸à¸¥à¸²à¸‡à¸£à¸°à¸«à¸§à¹ˆà¸²à¸‡à¹€à¸­à¸à¸ªà¸²à¸£à¸¡à¸²à¸•à¸£à¸à¸²à¸™ à¸à¸Žà¸•à¸±à¸”à¸ªà¸´à¸™à¹ƒà¸ˆ à¹à¸¥à¸°à¹€à¸­à¸™à¸ˆà¸´à¸™à¸‚à¸­à¸‡à¸«à¸™à¸¶à¹ˆà¸‡à¹€à¸”à¸µà¸¢à¸§",
+                                                            "à¹à¸¢à¸ vocabulary à¸¡à¸²à¸•à¸£à¸à¸²à¸™à¸­à¸­à¸à¸ˆà¸²à¸ logic à¸—à¸µà¹ˆ hardcode à¸­à¸¢à¸¹à¹ˆà¹ƒà¸™à¹„à¸Ÿà¸¥à¹Œ JavaScript",
+                                                            "à¸—à¸³à¹ƒà¸«à¹‰à¸•à¸£à¸§à¸ˆà¸ªà¸­à¸šà¸„à¸§à¸²à¸¡à¸ªà¸­à¸”à¸„à¸¥à¹‰à¸­à¸‡à¸£à¸°à¸«à¸§à¹ˆà¸²à¸‡à¹€à¸­à¸à¸ªà¸²à¸£à¹à¸¥à¸°à¹‚à¸„à¹‰à¸”à¹„à¸”à¹‰à¸‡à¹ˆà¸²à¸¢"
+                                                        ]
+                                  },
+                     "ethics":  {
+                                    "minimumConfidenceForAmbiguousZone":  0.7,
+                                    "hardConstraints":  [
+                                                            {
+                                                                "id":  "ETH-1",
+                                                                "title":  "Anti-Coercion \u0026 Interrogation",
+                                                                "rules":  [
+                                                                              "à¸‚à¹‰à¸­à¸«à¹‰à¸²à¸¡à¹ƒà¸™à¸à¸²à¸£à¸™à¸³à¹„à¸›à¹ƒà¸Šà¹‰à¹€à¸žà¸·à¹ˆà¸­à¸à¸²à¸£à¸šà¸±à¸‡à¸„à¸±à¸šà¹à¸¥à¸°à¸ªà¸­à¸šà¸ªà¸§à¸™"
+                                                                          ]
+                                                            },
+                                                            {
+                                                                "id":  "ETH-2",
+                                                                "title":  "Anti-Behavioral Control",
+                                                                "rules":  [
+                                                                              "à¸‚à¹‰à¸­à¸«à¹‰à¸²à¸¡à¹ƒà¸™à¸à¸²à¸£à¸„à¸§à¸šà¸„à¸¸à¸¡à¸žà¸¤à¸•à¸´à¸à¸£à¸£à¸¡"
+                                                                          ]
+                                                            },
+                                                            {
+                                                                "id":  "ETH-3",
+                                                                "title":  "Neuro-Privacy",
+                                                                "rules":  [
+                                                                              "à¸à¸²à¸£à¸„à¸¸à¹‰à¸¡à¸„à¸£à¸­à¸‡à¸„à¸§à¸²à¸¡à¹€à¸›à¹‡à¸™à¸ªà¹ˆà¸§à¸™à¸•à¸±à¸§à¸—à¸²à¸‡à¸£à¸°à¸šà¸šà¸›à¸£à¸°à¸ªà¸²à¸—"
+                                                                          ]
+                                                            },
+                                                            {
+                                                                "id":  "ETH-4",
+                                                                "title":  "Accuracy Disclaimer",
+                                                                "rules":  [
+                                                                              "à¸‚à¹‰à¸­à¸ˆà¸³à¸à¸±à¸”à¸„à¸§à¸²à¸¡à¸£à¸±à¸šà¸œà¸´à¸”à¸Šà¸­à¸šà¸”à¹‰à¸²à¸™à¸„à¸§à¸²à¸¡à¹à¸¡à¹ˆà¸™à¸¢à¸³"
+                                                                          ]
+                                                            },
+                                                            {
+                                                                "id":  "ETH-5",
+                                                                "title":  "Termination of License",
+                                                                "rules":  [
+                                                                              "à¸šà¸—à¸¥à¸‡à¹‚à¸—à¸©à¹à¸¥à¸°à¸à¸²à¸£à¹€à¸žà¸´à¸à¸–à¸­à¸™à¸ªà¸´à¸—à¸˜à¸´à¹Œ"
+                                                                          ]
+                                                            }
+                                                        ]
+                                },
+                     "namespace_system":  {
+                                              "known_namespaces":  [
+                                                                       {
+                                                                           "prefix":  "BS.",
+                                                                           "name":  "BS",
+                                                                           "meaning":  "BioSignal namespace",
+                                                                           "examples":  [
+                                                                                            "BS.ACC",
+                                                                                            "BS.GSR",
+                                                                                            "BS.HR",
+                                                                                            "BS.HRV",
+                                                                                            "BS.RESP",
+                                                                                            "BS.TEMP"
+                                                                                        ]
+                                                                       },
+                                                                       {
+                                                                           "prefix":  "NS.",
+                                                                           "name":  "NS",
+                                                                           "meaning":  "NeuroSignal namespace",
+                                                                           "examples":  [
+                                                                                            "NS.ALPHA",
+                                                                                            "NS.ALPHA_H",
+                                                                                            "NS.BETA_H",
+                                                                                            "NS.DELTA",
+                                                                                            "NS.ERP",
+                                                                                            "NS.GAMMA",
+                                                                                            "NS.THETA"
+                                                                                        ]
+                                                                       },
+                                                                       {
+                                                                           "prefix":  "PS.",
+                                                                           "name":  "PS",
+                                                                           "meaning":  "Psychological state namespace",
+                                                                           "examples":  [
+                                                                                            "PS.AMBIGUOUS",
+                                                                                            "PS.ANXIETY",
+                                                                                            "PS.BOREDOM",
+                                                                                            "PS.CALM",
+                                                                                            "PS.CONFUSION",
+                                                                                            "PS.CURIOSITY",
+                                                                                            "PS.DISGUST",
+                                                                                            "PS.DROWSY",
+                                                                                            "PS.ENCODING",
+                                                                                            "PS.EXCITEMENT",
+                                                                                            "PS.FLOW",
+                                                                                            "PS.FRUSTRATION",
+                                                                                            "PS.NEUTRAL",
+                                                                                            "PS.OVERLOAD",
+                                                                                            "PS.STRESS",
+                                                                                            "PS.SURPRISE"
+                                                                                        ]
+                                                                       },
+                                                                       {
+                                                                           "prefix":  "ACT.",
+                                                                           "name":  "ACT",
+                                                                           "meaning":  "Intervention/action namespace",
+                                                                           "examples":  [
+                                                                                            "ACT.ANCHOR",
+                                                                                            "ACT.BREAK",
+                                                                                            "ACT.CHALLENGE",
+                                                                                            "ACT.CLARIFY",
+                                                                                            "ACT.CONTINUE",
+                                                                                            "ACT.ENRICH",
+                                                                                            "ACT.EXPLORE",
+                                                                                            "ACT.FREEZE",
+                                                                                            "ACT.GROUND",
+                                                                                            "ACT.MAINTAIN",
+                                                                                            "ACT.REDIRECT",
+                                                                                            "ACT.REFRAME",
+                                                                                            "ACT.SIMPLIFY",
+                                                                                            "ACT.STABILIZE",
+                                                                                            "ACT.SUSTAIN"
+                                                                                        ]
+                                                                       },
+                                                                       {
+                                                                           "prefix":  "RT.",
+                                                                           "name":  "RT",
+                                                                           "meaning":  "Relative threshold namespace",
+                                                                           "examples":  [
+                                                                                            "RT.ALPHA",
+                                                                                            "RT.BETA_H",
+                                                                                            "RT.HRV",
+                                                                                            "RT.SIGNAL",
+                                                                                            "RT.THETA"
+                                                                                        ]
+                                                                       },
+                                                                       {
+                                                                           "prefix":  "AT.",
+                                                                           "name":  "AT",
+                                                                           "meaning":  "Absolute threshold namespace",
+                                                                           "examples":  [
+                                                                                            "AT.ART",
+                                                                                            "AT.CALIB",
+                                                                                            "AT.CONFIDENCE",
+                                                                                            "AT.GSR",
+                                                                                            "AT.HRV",
+                                                                                            "AT.IMPEDANCE",
+                                                                                            "AT.LATENCY",
+                                                                                            "AT.N400",
+                                                                                            "AT.RESP",
+                                                                                            "AT.SESSION"
+                                                                                        ]
+                                                                       },
+                                                                       {
+                                                                           "prefix":  "CS.",
+                                                                           "name":  "CS",
+                                                                           "meaning":  "Computed signal namespace",
+                                                                           "examples":  [
+                                                                                            "CS.COGNITIVE_LOAD",
+                                                                                            "CS.DROWSINESS",
+                                                                                            "CS.ENGAGEMENT",
+                                                                                            "CS.VALENCE_INDEX"
+                                                                                        ]
+                                                                       }
+                                                                   ]
+                                          },
+                     "runtime_profiles":  {
+                                              "sensor_fusion_states":  [
+                                                                           "FLOW",
+                                                                           "READY",
+                                                                           "STRESS",
+                                                                           "CONFUSION",
+                                                                           "BOREDOM",
+                                                                           "EXCITEMENT",
+                                                                           "FATIGUE",
+                                                                           "NEUTRAL",
+                                                                           "FRUSTRATION",
+                                                                           "ANXIETY",
+                                                                           "CURIOSITY",
+                                                                           "DISGUST",
+                                                                           "SURPRISE",
+                                                                           "CALM"
+                                                                       ],
+                                              "state_meta":  {
+                                                                 "FLOW":  {
+                                                                              "emoji":  "ðŸŽ¯",
+                                                                              "name":  "Flow State",
+                                                                              "ps":  "PS.FLOW",
+                                                                              "cls":  "active-flow",
+                                                                              "color":  "var(--accent-cyan)"
+                                                                          },
+                                                                 "READY":  {
+                                                                               "emoji":  "ðŸ§ ",
+                                                                               "name":  "à¸žà¸£à¹‰à¸­à¸¡à¸ˆà¸”à¸ˆà¸³",
+                                                                               "ps":  "PS.ENCODING",
+                                                                               "cls":  "active-ready",
+                                                                               "color":  "var(--accent-green)"
+                                                                           },
+                                                                 "STRESS":  {
+                                                                                "emoji":  "ðŸ˜°",
+                                                                                "name":  "à¹€à¸„à¸£à¸µà¸¢à¸”/Overload",
+                                                                                "ps":  "PS.OVERLOAD",
+                                                                                "cls":  "active-stress",
+                                                                                "color":  "var(--accent-red)"
+                                                                            },
+                                                                 "CONFUSION":  {
+                                                                                   "emoji":  "ðŸ˜µ",
+                                                                                   "name":  "à¸ªà¸±à¸šà¸ªà¸™",
+                                                                                   "ps":  "PS.CONFUSION",
+                                                                                   "cls":  "active-confusion",
+                                                                                   "color":  "var(--accent-red)"
+                                                                               },
+                                                                 "BOREDOM":  {
+                                                                                 "emoji":  "ðŸ˜´",
+                                                                                 "name":  "à¹€à¸šà¸·à¹ˆà¸­",
+                                                                                 "ps":  "PS.BOREDOM",
+                                                                                 "cls":  "active-boredom",
+                                                                                 "color":  "var(--accent-amber)"
+                                                                             },
+                                                                 "EXCITEMENT":  {
+                                                                                    "emoji":  "âš¡",
+                                                                                    "name":  "à¸•à¸·à¹ˆà¸™à¹€à¸•à¹‰à¸™",
+                                                                                    "ps":  "PS.EXCITEMENT",
+                                                                                    "cls":  "active-excitement",
+                                                                                    "color":  "var(--accent-purple)"
+                                                                                },
+                                                                 "FATIGUE":  {
+                                                                                 "emoji":  "ðŸ˜ª",
+                                                                                 "name":  "à¸¥à¹‰à¸²/Fatigue",
+                                                                                 "ps":  "PS.DROWSY",
+                                                                                 "cls":  "active-fatigue",
+                                                                                 "color":  "var(--accent-slate)"
+                                                                             },
+                                                                 "NEUTRAL":  {
+                                                                                 "emoji":  "ðŸ˜",
+                                                                                 "name":  "à¸›à¸à¸•à¸´",
+                                                                                 "ps":  "PS.NEUTRAL",
+                                                                                 "cls":  "",
+                                                                                 "color":  "var(--text)"
+                                                                             },
+                                                                 "IDLE":  {
+                                                                              "emoji":  "â³",
+                                                                              "name":  "à¸£à¸­à¹€à¸£à¸´à¹ˆà¸¡à¸•à¹‰à¸™",
+                                                                              "ps":  "PS.IDLE",
+                                                                              "cls":  "",
+                                                                              "color":  "var(--text-dim)"
+                                                                          },
+                                                                 "FRUSTRATION":  {
+                                                                                     "emoji":  "ðŸ˜¤",
+                                                                                     "name":  "à¸«à¸‡à¸¸à¸”à¸«à¸‡à¸´à¸”",
+                                                                                     "ps":  "PS.FRUSTRATION",
+                                                                                     "cls":  "active-frustration",
+                                                                                     "color":  "var(--accent-orange)"
+                                                                                 },
+                                                                 "ANXIETY":  {
+                                                                                 "emoji":  "ðŸ˜Ÿ",
+                                                                                 "name":  "à¸§à¸´à¸•à¸à¸à¸±à¸‡à¸§à¸¥",
+                                                                                 "ps":  "PS.ANXIETY",
+                                                                                 "cls":  "active-anxiety",
+                                                                                 "color":  "var(--accent-red)"
+                                                                             },
+                                                                 "CURIOSITY":  {
+                                                                                   "emoji":  "ðŸ¤”",
+                                                                                   "name":  "à¸­à¸¢à¸²à¸à¸£à¸¹à¹‰",
+                                                                                   "ps":  "PS.CURIOSITY",
+                                                                                   "cls":  "active-curiosity",
+                                                                                   "color":  "var(--accent-teal)"
+                                                                               },
+                                                                 "DISGUST":  {
+                                                                                 "emoji":  "ðŸ˜’",
+                                                                                 "name":  "à¸£à¸±à¸‡à¹€à¸à¸µà¸¢à¸ˆ",
+                                                                                 "ps":  "PS.DISGUST",
+                                                                                 "cls":  "active-disgust",
+                                                                                 "color":  "var(--accent-slate)"
+                                                                             },
+                                                                 "SURPRISE":  {
+                                                                                  "emoji":  "ðŸ˜²",
+                                                                                  "name":  "à¸›à¸£à¸°à¸«à¸¥à¸²à¸”à¹ƒà¸ˆ",
+                                                                                  "ps":  "PS.SURPRISE",
+                                                                                  "cls":  "active-surprise",
+                                                                                  "color":  "var(--accent-yellow)"
+                                                                              },
+                                                                 "CALM":  {
+                                                                              "emoji":  "ðŸ˜Œ",
+                                                                              "name":  "à¸ªà¸‡à¸š",
+                                                                              "ps":  "PS.CALM",
+                                                                              "cls":  "active-calm",
+                                                                              "color":  "var(--accent-green)"
+                                                                          }
+                                                             },
+                                              "gen1_rules":  [
+                                                                 {
+                                                                     "id":  "NL-001",
+                                                                     "priority":  1,
+                                                                     "state":  "FLOW",
+                                                                     "action":  "ACT.MAINTAIN",
+                                                                     "condition":  "z.hrv \u003e 1.2 \u0026\u0026 z.hr \u003c -0.8 \u0026\u0026 z.gsr \u003c -0.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-004",
+                                                                     "priority":  1,
+                                                                     "state":  "STRESS",
+                                                                     "action":  "ACT.BREAK",
+                                                                     "condition":  "z.hrv \u003c -1.5 \u0026\u0026 z.hr \u003e 1.8 \u0026\u0026 z.gsr \u003e 2.0"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-002",
+                                                                     "priority":  2,
+                                                                     "state":  "CONFUSION",
+                                                                     "action":  "ACT.SIMPLIFY",
+                                                                     "condition":  "v.eeg \u003e 2.0 \u0026\u0026 z.hrv \u003c -0.7 \u0026\u0026 z.hr \u003e 1.2"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-003",
+                                                                     "priority":  2,
+                                                                     "state":  "READY",
+                                                                     "action":  "ACT.ANCHOR",
+                                                                     "condition":  "z.hrv \u003e 1.8 \u0026\u0026 z.hr \u003c -1.2 \u0026\u0026 z.gsr \u003c -1.0 \u0026\u0026 v.eeg \u003c 0.7"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-005",
+                                                                     "priority":  3,
+                                                                     "state":  "BOREDOM",
+                                                                     "action":  "ACT.SUMMARIZE",
+                                                                     "condition":  "z.gsr \u003e 1.8 \u0026\u0026 z.hr \u003c -0.5 \u0026\u0026 z.hrv \u003e -0.5 \u0026\u0026 z.hrv \u003c 0.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-006",
+                                                                     "priority":  3,
+                                                                     "state":  "EXCITEMENT",
+                                                                     "action":  "ACT.ENRICH",
+                                                                     "condition":  "z.hr \u003e 1.2 \u0026\u0026 z.gsr \u003e 1.2 \u0026\u0026 z.hrv \u003e -1.0 \u0026\u0026 z.hrv \u003c 0.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-007",
+                                                                     "priority":  2,
+                                                                     "state":  "FATIGUE",
+                                                                     "action":  "ACT.BREAK",
+                                                                     "condition":  "z.hrv \u003c -0.8 \u0026\u0026 Math.abs(z.hr) \u003c 0.5 \u0026\u0026 v.eeg \u003e 1.2 \u0026\u0026 v.eeg \u003c 2.0"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-008",
+                                                                     "priority":  4,
+                                                                     "state":  "NEUTRAL",
+                                                                     "action":  "ACT.MAINTAIN",
+                                                                     "condition":  "Math.abs(z.hrv) \u003c 0.4 \u0026\u0026 Math.abs(z.hr) \u003c 0.4 \u0026\u0026 Math.abs(z.gsr) \u003c 0.4"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-009",
+                                                                     "priority":  5,
+                                                                     "state":  "NEUTRAL",
+                                                                     "action":  "ACT.MAINTAIN",
+                                                                     "condition":  "Math.max(Math.abs(z.hrv), Math.abs(z.hr), Math.abs(z.gsr), Math.abs(z.rr)) \u003c 0.6"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-010",
+                                                                     "priority":  1,
+                                                                     "state":  "FRUSTRATION",
+                                                                     "action":  "ACT.REFRAME",
+                                                                     "condition":  "z.hrv \u003c -1.8 \u0026\u0026 z.hr \u003e 2.0 \u0026\u0026 z.gsr \u003e 2.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-011",
+                                                                     "priority":  1,
+                                                                     "state":  "ANXIETY",
+                                                                     "action":  "ACT.GROUND",
+                                                                     "condition":  "z.hrv \u003c -2.0 \u0026\u0026 z.hr \u003e 2.2 \u0026\u0026 z.gsr \u003e 2.0 \u0026\u0026 z.rr \u003e 1.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-012",
+                                                                     "priority":  3,
+                                                                     "state":  "CURIOSITY",
+                                                                     "action":  "ACT.EXPLORE",
+                                                                     "condition":  "z.hr \u003e 0.5 \u0026\u0026 Math.abs(z.gsr) \u003c 0.8 \u0026\u0026 z.hrv \u003e 0.3"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-013",
+                                                                     "priority":  3,
+                                                                     "state":  "DISGUST",
+                                                                     "action":  "ACT.REDIRECT",
+                                                                     "condition":  "z.hrv \u003c -1.0 \u0026\u0026 z.gsr \u003e 1.5 \u0026\u0026 Math.abs(z.hr) \u003e 0.8"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-014",
+                                                                     "priority":  2,
+                                                                     "state":  "SURPRISE",
+                                                                     "action":  "ACT.STABILIZE",
+                                                                     "condition":  "z.hr \u003e 2.0 \u0026\u0026 z.gsr \u003e 2.0 \u0026\u0026 z.hrv \u003e -0.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-015",
+                                                                     "priority":  4,
+                                                                     "state":  "CALM",
+                                                                     "action":  "ACT.SUSTAIN",
+                                                                     "condition":  "z.hrv \u003e 2.0 \u0026\u0026 z.hr \u003c -1.5 \u0026\u0026 z.gsr \u003c -1.5"
+                                                                 }
+                                                             ],
+                                              "gen2_rules":  [
+                                                                 {
+                                                                     "id":  "NL-001",
+                                                                     "priority":  1,
+                                                                     "state":  "FLOW",
+                                                                     "action":  "ACT.MAINTAIN",
+                                                                     "condition":  "z.hrv \u003e 1.2 \u0026\u0026 z.hr \u003c -0.8 \u0026\u0026 z.gsr \u003c -0.5 \u0026\u0026 (b?.alpha ?? 0) \u003e 1.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-004",
+                                                                     "priority":  1,
+                                                                     "state":  "STRESS",
+                                                                     "action":  "ACT.BREAK",
+                                                                     "condition":  "z.hrv \u003c -1.5 \u0026\u0026 z.hr \u003e 1.8 \u0026\u0026 z.gsr \u003e 2.0"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-002",
+                                                                     "priority":  2,
+                                                                     "state":  "CONFUSION",
+                                                                     "action":  "ACT.SIMPLIFY",
+                                                                     "condition":  "v.eeg \u003e 2.0 \u0026\u0026 z.hrv \u003c -0.7 \u0026\u0026 z.hr \u003e 1.2 \u0026\u0026 (b?.thetaAlphaRatio ?? 1) \u003e 1.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-003",
+                                                                     "priority":  2,
+                                                                     "state":  "READY",
+                                                                     "action":  "ACT.ANCHOR",
+                                                                     "condition":  "z.hrv \u003e 1.8 \u0026\u0026 z.hr \u003c -1.2 \u0026\u0026 z.gsr \u003c -1.0 \u0026\u0026 v.eeg \u003c 0.7 \u0026\u0026 (b?.alpha ?? 0) \u003e 1.2"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-005",
+                                                                     "priority":  3,
+                                                                     "state":  "BOREDOM",
+                                                                     "action":  "ACT.SUMMARIZE",
+                                                                     "condition":  "z.gsr \u003e 1.8 \u0026\u0026 z.hr \u003c -0.5 \u0026\u0026 z.hrv \u003e -0.5 \u0026\u0026 z.hrv \u003c 0.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-006",
+                                                                     "priority":  3,
+                                                                     "state":  "EXCITEMENT",
+                                                                     "action":  "ACT.ENRICH",
+                                                                     "condition":  "z.hr \u003e 1.2 \u0026\u0026 z.gsr \u003e 1.2 \u0026\u0026 z.hrv \u003e -1.0 \u0026\u0026 z.hrv \u003c 0.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-007",
+                                                                     "priority":  2,
+                                                                     "state":  "FATIGUE",
+                                                                     "action":  "ACT.BREAK",
+                                                                     "condition":  "z.hrv \u003c -0.8 \u0026\u0026 Math.abs(z.hr) \u003c 0.5 \u0026\u0026 v.eeg \u003e 1.2 \u0026\u0026 v.eeg \u003c 2.0 \u0026\u0026 (b?.theta ?? 0) \u003e 1.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-008",
+                                                                     "priority":  4,
+                                                                     "state":  "NEUTRAL",
+                                                                     "action":  "ACT.MAINTAIN",
+                                                                     "condition":  "Math.abs(z.hrv) \u003c 0.4 \u0026\u0026 Math.abs(z.hr) \u003c 0.4 \u0026\u0026 Math.abs(z.gsr) \u003c 0.4"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-009",
+                                                                     "priority":  5,
+                                                                     "state":  "NEUTRAL",
+                                                                     "action":  "ACT.MAINTAIN",
+                                                                     "condition":  "Math.max(Math.abs(z.hrv), Math.abs(z.hr), Math.abs(z.gsr), Math.abs(z.rr)) \u003c 0.6"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-010",
+                                                                     "priority":  1,
+                                                                     "state":  "FRUSTRATION",
+                                                                     "action":  "ACT.REFRAME",
+                                                                     "condition":  "z.hrv \u003c -1.8 \u0026\u0026 z.hr \u003e 2.0 \u0026\u0026 z.gsr \u003e 2.5 \u0026\u0026 (b?.thetaAlphaRatio ?? 1) \u003e 2.0"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-011",
+                                                                     "priority":  1,
+                                                                     "state":  "ANXIETY",
+                                                                     "action":  "ACT.GROUND",
+                                                                     "condition":  "z.hrv \u003c -2.0 \u0026\u0026 z.hr \u003e 2.2 \u0026\u0026 z.rr \u003e 1.5 \u0026\u0026 (b?.beta ?? 0) \u003e 2.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-012",
+                                                                     "priority":  3,
+                                                                     "state":  "CURIOSITY",
+                                                                     "action":  "ACT.EXPLORE",
+                                                                     "condition":  "z.hr \u003e 0.5 \u0026\u0026 Math.abs(z.gsr) \u003c 0.8 \u0026\u0026 z.hrv \u003e 0.3 \u0026\u0026 (b?.gamma ?? 0) \u003e 1.2 \u0026\u0026 (b?.theta ?? 0) \u003e 1.0"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-013",
+                                                                     "priority":  3,
+                                                                     "state":  "DISGUST",
+                                                                     "action":  "ACT.REDIRECT",
+                                                                     "condition":  "z.hrv \u003c -1.0 \u0026\u0026 z.gsr \u003e 1.5 \u0026\u0026 Math.abs(z.hr) \u003e 0.8 \u0026\u0026 (b?.beta ?? 0) \u003e 1.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-014",
+                                                                     "priority":  2,
+                                                                     "state":  "SURPRISE",
+                                                                     "action":  "ACT.STABILIZE",
+                                                                     "condition":  "z.hr \u003e 2.0 \u0026\u0026 z.gsr \u003e 2.0 \u0026\u0026 z.hrv \u003e -0.5 \u0026\u0026 (b?.gamma ?? 0) \u003e 1.5"
+                                                                 },
+                                                                 {
+                                                                     "id":  "NL-015",
+                                                                     "priority":  4,
+                                                                     "state":  "CALM",
+                                                                     "action":  "ACT.SUSTAIN",
+                                                                     "condition":  "z.hrv \u003e 2.0 \u0026\u0026 z.hr \u003c -1.5 \u0026\u0026 z.gsr \u003c -1.5 \u0026\u0026 (b?.alpha ?? 0) \u003e 2.0 \u0026\u0026 (b?.beta ?? 0) \u003c 0.8"
+                                                                 }
+                                                             ]
+                                          }
+                 },
+    "central_standard":  {
+                             "schema_version":  "1.0.0",
+                             "generated_at":  "2026-03-26",
+                             "source":  {
+                                            "document":  "Phasa_Tawan_Signal_Language_Standard.docx",
+                                            "document_type":  "Word",
+                                            "extraction_scope":  {
+                                                                     "paragraphs":  282,
+                                                                     "tables":  42
+                                                                 }
+                                        },
+                             "standard_profile":  {
+                                                      "name_th":  "à¸ à¸²à¸©à¸²à¸•à¸°à¸§à¸±à¸™",
+                                                      "name_en":  "Phasa Tawan",
+                                                      "subtitle":  "Signal Language Standard",
+                                                      "purpose":  "à¸¡à¸²à¸•à¸£à¸à¸²à¸™à¸ à¸²à¸©à¸²à¸à¸¥à¸²à¸‡à¸ªà¸³à¸«à¸£à¸±à¸šà¸£à¸°à¸šà¸šà¸›à¸£à¸°à¸¡à¸§à¸¥à¸œà¸¥à¸ªà¸±à¸à¸à¸²à¸“à¸Šà¸µà¸§à¸¡à¸²à¸•à¸£à¹à¸¥à¸°à¸ªà¸±à¸à¸à¸²à¸“à¸›à¸£à¸°à¸ªà¸²à¸—",
+                                                      "design_intent":  [
+                                                                            "à¹ƒà¸Šà¹‰à¹€à¸›à¹‡à¸™à¸ à¸²à¸©à¸²à¸à¸¥à¸²à¸‡à¸£à¸°à¸«à¸§à¹ˆà¸²à¸‡à¹€à¸­à¸à¸ªà¸²à¸£à¸¡à¸²à¸•à¸£à¸à¸²à¸™ à¸à¸Žà¸•à¸±à¸”à¸ªà¸´à¸™à¹ƒà¸ˆ à¹à¸¥à¸°à¹€à¸­à¸™à¸ˆà¸´à¸™à¸‚à¸­à¸‡à¸«à¸™à¸¶à¹ˆà¸‡à¹€à¸”à¸µà¸¢à¸§",
+                                                                            "à¹à¸¢à¸ vocabulary à¸¡à¸²à¸•à¸£à¸à¸²à¸™à¸­à¸­à¸à¸ˆà¸²à¸ logic à¸—à¸µà¹ˆ hardcode à¸­à¸¢à¸¹à¹ˆà¹ƒà¸™à¹„à¸Ÿà¸¥à¹Œ JavaScript",
+                                                                            "à¸—à¸³à¹ƒà¸«à¹‰à¸•à¸£à¸§à¸ˆà¸ªà¸­à¸šà¸„à¸§à¸²à¸¡à¸ªà¸­à¸”à¸„à¸¥à¹‰à¸­à¸‡à¸£à¸°à¸«à¸§à¹ˆà¸²à¸‡à¹€à¸­à¸à¸ªà¸²à¸£à¹à¸¥à¸°à¹‚à¸„à¹‰à¸”à¹„à¸”à¹‰à¸‡à¹ˆà¸²à¸¢"
+                                                                        ]
+                                                  },
+                             "governance":  {
+                                                "ethics_sections":  [
+                                                                        {
+                                                                            "id":  "ETH-1",
+                                                                            "title":  "à¸‚à¹‰à¸­à¸«à¹‰à¸²à¸¡à¹ƒà¸™à¸à¸²à¸£à¸™à¸³à¹„à¸›à¹ƒà¸Šà¹‰à¹€à¸žà¸·à¹ˆà¸­à¸à¸²à¸£à¸šà¸±à¸‡à¸„à¸±à¸šà¹à¸¥à¸°à¸ªà¸­à¸šà¸ªà¸§à¸™",
+                                                                            "label_en":  "Anti-Coercion \u0026 Interrogation"
+                                                                        },
+                                                                        {
+                                                                            "id":  "ETH-2",
+                                                                            "title":  "à¸‚à¹‰à¸­à¸«à¹‰à¸²à¸¡à¹ƒà¸™à¸à¸²à¸£à¸„à¸§à¸šà¸„à¸¸à¸¡à¸žà¸¤à¸•à¸´à¸à¸£à¸£à¸¡",
+                                                                            "label_en":  "Anti-Behavioral Control"
+                                                                        },
+                                                                        {
+                                                                            "id":  "ETH-3",
+                                                                            "title":  "à¸à¸²à¸£à¸„à¸¸à¹‰à¸¡à¸„à¸£à¸­à¸‡à¸„à¸§à¸²à¸¡à¹€à¸›à¹‡à¸™à¸ªà¹ˆà¸§à¸™à¸•à¸±à¸§à¸—à¸²à¸‡à¸£à¸°à¸šà¸šà¸›à¸£à¸°à¸ªà¸²à¸—",
+                                                                            "label_en":  "Neuro-Privacy"
+                                                                        },
+                                                                        {
+                                                                            "id":  "ETH-4",
+                                                                            "title":  "à¸‚à¹‰à¸­à¸ˆà¸³à¸à¸±à¸”à¸„à¸§à¸²à¸¡à¸£à¸±à¸šà¸œà¸´à¸”à¸Šà¸­à¸šà¸”à¹‰à¸²à¸™à¸„à¸§à¸²à¸¡à¹à¸¡à¹ˆà¸™à¸¢à¸³",
+                                                                            "label_en":  "Accuracy Disclaimer"
+                                                                        },
+                                                                        {
+                                                                            "id":  "ETH-5",
+                                                                            "title":  "à¸šà¸—à¸¥à¸‡à¹‚à¸—à¸©à¹à¸¥à¸°à¸à¸²à¸£à¹€à¸žà¸´à¸à¸–à¸­à¸™à¸ªà¸´à¸—à¸˜à¸´à¹Œ",
+                                                                            "label_en":  "Termination of License"
+                                                                        }
+                                                                    ]
+                                            },
+                             "chapters":  [
+                                              {
+                                                  "id":  "intro",
+                                                  "title":  "à¸šà¸—à¸™à¸³ â€” à¸—à¸µà¹ˆà¸¡à¸²à¹à¸¥à¸°à¸›à¸£à¸±à¸Šà¸à¸²à¸‚à¸­à¸‡à¸ à¸²à¸©à¸²"
+                                              },
+                                              {
+                                                  "id":  "ch01",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 1 â€” Namespace à¹à¸¥à¸°à¸£à¸°à¸šà¸šà¸›à¸£à¸°à¹€à¸ à¸—à¸‚à¹‰à¸­à¸¡à¸¹à¸¥"
+                                              },
+                                              {
+                                                  "id":  "ch02",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 2 â€” à¸¡à¸²à¸•à¸£à¸à¸²à¸™à¸ªà¸±à¸à¸à¸²à¸“à¸Šà¸µà¸§à¸¡à¸²à¸•à¸£"
+                                              },
+                                              {
+                                                  "id":  "ch03",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 3 â€” à¸¡à¸²à¸•à¸£à¸à¸²à¸™à¸ªà¸ à¸²à¸§à¸°à¸—à¸²à¸‡à¸ˆà¸´à¸•à¸§à¸´à¸—à¸¢à¸²"
+                                              },
+                                              {
+                                                  "id":  "ch04",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 4 â€” à¸ªà¸¡à¸à¸²à¸£à¸„à¸“à¸´à¸•à¸¨à¸²à¸ªà¸•à¸£à¹Œà¸¡à¸²à¸•à¸£à¸à¸²à¸™"
+                                              },
+                                              {
+                                                  "id":  "ch05",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 5 â€” à¸¡à¸²à¸•à¸£à¸à¸²à¸™à¸ªà¸±à¸à¸à¸²à¸“ EEG"
+                                              },
+                                              {
+                                                  "id":  "ch06",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 6 â€” à¹„à¸§à¸¢à¸²à¸à¸£à¸“à¹Œà¸‚à¸­à¸‡ Rule"
+                                              },
+                                              {
+                                                  "id":  "ch07",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 7 â€” à¸¡à¸²à¸•à¸£à¸à¸²à¸™ Action"
+                                              },
+                                              {
+                                                  "id":  "ch08",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 8 â€” Decision Engine \u0026 Priority Matrix"
+                                              },
+                                              {
+                                                  "id":  "ch09",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 9 â€” Markov Transition Matrix"
+                                              },
+                                              {
+                                                  "id":  "ch10",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 10 â€” Absolute Threshold (AT.*) Master Table"
+                                              },
+                                              {
+                                                  "id":  "ch11",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 11 â€” à¸à¸²à¸£à¸•à¸£à¸§à¸ˆà¸ˆà¸±à¸š Artifact"
+                                              },
+                                              {
+                                                  "id":  "ch12",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 12 â€” Human Simulator â€” Phasa Tawan Standard"
+                                              },
+                                              {
+                                                  "id":  "ch13",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 13 â€” Phasa Tawan Rule Examples"
+                                              },
+                                              {
+                                                  "id":  "ch14",
+                                                  "title":  "à¸šà¸—à¸—à¸µà¹ˆ 14 â€” à¸ªà¸£à¸¸à¸› Extension Namespace"
+                                              },
+                                              {
+                                                  "id":  "appendix",
+                                                  "title":  "à¸ à¸²à¸„à¸œà¸™à¸§à¸ â€” Quick Reference Card"
+                                              }
+                                          ],
+                             "namespaces":  {
+                                                "BS":  {
+                                                           "description":  "BioSignal namespace",
+                                                           "tokens":  [
+                                                                          "BS.ACC",
+                                                                          "BS.GSR",
+                                                                          "BS.HR",
+                                                                          "BS.HRV",
+                                                                          "BS.RESP",
+                                                                          "BS.TEMP"
+                                                                      ]
+                                                       },
+                                                "NS":  {
+                                                           "description":  "NeuroSignal namespace",
+                                                           "tokens":  [
+                                                                          "NS.ALPHA",
+                                                                          "NS.ALPHA_H",
+                                                                          "NS.BETA_H",
+                                                                          "NS.DELTA",
+                                                                          "NS.ERP",
+                                                                          "NS.GAMMA",
+                                                                          "NS.THETA"
+                                                                      ]
+                                                       },
+                                                "PS":  {
+                                                           "description":  "Psychological state namespace",
+                                                           "tokens":  [
+                                                                          "PS.AMBIGUOUS",
+                                                                          "PS.ANXIETY",
+                                                                          "PS.BOREDOM",
+                                                                          "PS.CALM",
+                                                                          "PS.CONFUSION",
+                                                                          "PS.CURIOSITY",
+                                                                          "PS.DISGUST",
+                                                                          "PS.DROWSY",
+                                                                          "PS.ENCODING",
+                                                                          "PS.EXCITEMENT",
+                                                                          "PS.FLOW",
+                                                                          "PS.FRUSTRATION",
+                                                                          "PS.NEUTRAL",
+                                                                          "PS.OVERLOAD",
+                                                                          "PS.STRESS",
+                                                                          "PS.SURPRISE"
+                                                                      ]
+                                                       },
+                                                "ACT":  {
+                                                            "description":  "Intervention/action namespace",
+                                                            "tokens":  [
+                                                                           "ACT.ANCHOR",
+                                                                           "ACT.BREAK",
+                                                                           "ACT.CHALLENGE",
+                                                                           "ACT.CLARIFY",
+                                                                           "ACT.CONTINUE",
+                                                                           "ACT.ENRICH",
+                                                                           "ACT.EXPLORE",
+                                                                           "ACT.FREEZE",
+                                                                           "ACT.GROUND",
+                                                                           "ACT.MAINTAIN",
+                                                                           "ACT.REDIRECT",
+                                                                           "ACT.REFRAME",
+                                                                           "ACT.SIMPLIFY",
+                                                                           "ACT.STABILIZE",
+                                                                           "ACT.SUSTAIN"
+                                                                       ]
+                                                        },
+                                                "RT":  {
+                                                           "description":  "Relative threshold namespace",
+                                                           "tokens":  [
+                                                                          "RT.ALPHA",
+                                                                          "RT.BETA_H",
+                                                                          "RT.HRV",
+                                                                          "RT.SIGNAL",
+                                                                          "RT.THETA"
+                                                                      ]
+                                                       },
+                                                "AT":  {
+                                                           "description":  "Absolute threshold namespace",
+                                                           "tokens":  [
+                                                                          "AT.ART",
+                                                                          "AT.CALIB",
+                                                                          "AT.CONFIDENCE",
+                                                                          "AT.GSR",
+                                                                          "AT.HRV",
+                                                                          "AT.IMPEDANCE",
+                                                                          "AT.LATENCY",
+                                                                          "AT.N400",
+                                                                          "AT.RESP",
+                                                                          "AT.SESSION"
+                                                                      ]
+                                                       },
+                                                "CS":  {
+                                                           "description":  "Computed signal namespace",
+                                                           "tokens":  [
+                                                                          "CS.COGNITIVE_LOAD",
+                                                                          "CS.DROWSINESS",
+                                                                          "CS.ENGAGEMENT",
+                                                                          "CS.VALENCE_INDEX"
+                                                                      ]
+                                                       }
+                                            },
+                             "canonical_vocab":  {
+                                                     "actions_for_runtime":  [
+                                                                                 "ACT.ANCHOR",
+                                                                                 "ACT.BREAK",
+                                                                                 "ACT.CHALLENGE",
+                                                                                 "ACT.CLARIFY",
+                                                                                 "ACT.CONTINUE",
+                                                                                 "ACT.ENRICH",
+                                                                                 "ACT.EXPLORE",
+                                                                                 "ACT.FREEZE",
+                                                                                 "ACT.GROUND",
+                                                                                 "ACT.MAINTAIN",
+                                                                                 "ACT.REDIRECT",
+                                                                                 "ACT.REFRAME",
+                                                                                 "ACT.SIMPLIFY",
+                                                                                 "ACT.STABILIZE",
+                                                                                 "ACT.SUSTAIN"
+                                                                             ],
+                                                     "psychological_states_for_runtime":  [
+                                                                                              "PS.AMBIGUOUS",
+                                                                                              "PS.ANXIETY",
+                                                                                              "PS.BOREDOM",
+                                                                                              "PS.CALM",
+                                                                                              "PS.CONFUSION",
+                                                                                              "PS.CURIOSITY",
+                                                                                              "PS.DISGUST",
+                                                                                              "PS.DROWSY",
+                                                                                              "PS.ENCODING",
+                                                                                              "PS.EXCITEMENT",
+                                                                                              "PS.FLOW",
+                                                                                              "PS.FRUSTRATION",
+                                                                                              "PS.NEUTRAL",
+                                                                                              "PS.OVERLOAD",
+                                                                                              "PS.STRESS",
+                                                                                              "PS.SURPRISE"
+                                                                                          ],
+                                                     "signal_primitives_for_runtime":  [
+                                                                                           "BS.ACC",
+                                                                                           "BS.GSR",
+                                                                                           "BS.HR",
+                                                                                           "BS.HRV",
+                                                                                           "BS.RESP",
+                                                                                           "BS.TEMP",
+                                                                                           "NS.ALPHA",
+                                                                                           "NS.ALPHA_H",
+                                                                                           "NS.BETA_H",
+                                                                                           "NS.DELTA",
+                                                                                           "NS.ERP",
+                                                                                           "NS.GAMMA",
+                                                                                           "NS.THETA"
+                                                                                       ]
+                                                 },
+                             "runtime_profiles":  {
+                                                      "sensor_fusion_states":  [
+                                                                                   "FLOW",
+                                                                                   "READY",
+                                                                                   "STRESS",
+                                                                                   "CONFUSION",
+                                                                                   "BOREDOM",
+                                                                                   "EXCITEMENT",
+                                                                                   "FATIGUE",
+                                                                                   "NEUTRAL",
+                                                                                   "FRUSTRATION",
+                                                                                   "ANXIETY",
+                                                                                   "CURIOSITY",
+                                                                                   "DISGUST",
+                                                                                   "SURPRISE",
+                                                                                   "CALM"
+                                                                               ],
+                                                      "state_meta":  {
+                                                                         "FLOW":  {
+                                                                                      "emoji":  "ðŸŽ¯",
+                                                                                      "name":  "Flow State",
+                                                                                      "ps":  "PS.FLOW",
+                                                                                      "cls":  "active-flow",
+                                                                                      "color":  "var(--accent-cyan)"
+                                                                                  },
+                                                                         "READY":  {
+                                                                                       "emoji":  "ðŸ§ ",
+                                                                                       "name":  "à¸žà¸£à¹‰à¸­à¸¡à¸ˆà¸”à¸ˆà¸³",
+                                                                                       "ps":  "PS.ENCODING",
+                                                                                       "cls":  "active-ready",
+                                                                                       "color":  "var(--accent-green)"
+                                                                                   },
+                                                                         "STRESS":  {
+                                                                                        "emoji":  "ðŸ˜°",
+                                                                                        "name":  "à¹€à¸„à¸£à¸µà¸¢à¸”/Overload",
+                                                                                        "ps":  "PS.OVERLOAD",
+                                                                                        "cls":  "active-stress",
+                                                                                        "color":  "var(--accent-red)"
+                                                                                    },
+                                                                         "CONFUSION":  {
+                                                                                           "emoji":  "ðŸ˜µ",
+                                                                                           "name":  "à¸ªà¸±à¸šà¸ªà¸™",
+                                                                                           "ps":  "PS.CONFUSION",
+                                                                                           "cls":  "active-confusion",
+                                                                                           "color":  "var(--accent-red)"
+                                                                                       },
+                                                                         "BOREDOM":  {
+                                                                                         "emoji":  "ðŸ˜´",
+                                                                                         "name":  "à¹€à¸šà¸·à¹ˆà¸­",
+                                                                                         "ps":  "PS.BOREDOM",
+                                                                                         "cls":  "active-boredom",
+                                                                                         "color":  "var(--accent-amber)"
+                                                                                     },
+                                                                         "EXCITEMENT":  {
+                                                                                            "emoji":  "âš¡",
+                                                                                            "name":  "à¸•à¸·à¹ˆà¸™à¹€à¸•à¹‰à¸™",
+                                                                                            "ps":  "PS.EXCITEMENT",
+                                                                                            "cls":  "active-excitement",
+                                                                                            "color":  "var(--accent-purple)"
+                                                                                        },
+                                                                         "FATIGUE":  {
+                                                                                         "emoji":  "ðŸ˜ª",
+                                                                                         "name":  "à¸¥à¹‰à¸²/Fatigue",
+                                                                                         "ps":  "PS.DROWSY",
+                                                                                         "cls":  "active-fatigue",
+                                                                                         "color":  "var(--accent-slate)"
+                                                                                     },
+                                                                         "NEUTRAL":  {
+                                                                                         "emoji":  "ðŸ˜",
+                                                                                         "name":  "à¸›à¸à¸•à¸´",
+                                                                                         "ps":  "PS.NEUTRAL",
+                                                                                         "cls":  "",
+                                                                                         "color":  "var(--text)"
+                                                                                     },
+                                                                         "IDLE":  {
+                                                                                      "emoji":  "â³",
+                                                                                      "name":  "à¸£à¸­à¹€à¸£à¸´à¹ˆà¸¡à¸•à¹‰à¸™",
+                                                                                      "ps":  "PS.IDLE",
+                                                                                      "cls":  "",
+                                                                                      "color":  "var(--text-dim)"
+                                                                                  },
+                                                                         "FRUSTRATION":  {
+                                                                                             "emoji":  "ðŸ˜¤",
+                                                                                             "name":  "à¸«à¸‡à¸¸à¸”à¸«à¸‡à¸´à¸”",
+                                                                                             "ps":  "PS.FRUSTRATION",
+                                                                                             "cls":  "active-frustration",
+                                                                                             "color":  "var(--accent-orange)"
+                                                                                         },
+                                                                         "ANXIETY":  {
+                                                                                         "emoji":  "ðŸ˜Ÿ",
+                                                                                         "name":  "à¸§à¸´à¸•à¸à¸à¸±à¸‡à¸§à¸¥",
+                                                                                         "ps":  "PS.ANXIETY",
+                                                                                         "cls":  "active-anxiety",
+                                                                                         "color":  "var(--accent-red)"
+                                                                                     },
+                                                                         "CURIOSITY":  {
+                                                                                           "emoji":  "ðŸ¤”",
+                                                                                           "name":  "à¸­à¸¢à¸²à¸à¸£à¸¹à¹‰",
+                                                                                           "ps":  "PS.CURIOSITY",
+                                                                                           "cls":  "active-curiosity",
+                                                                                           "color":  "var(--accent-teal)"
+                                                                                       },
+                                                                         "DISGUST":  {
+                                                                                         "emoji":  "ðŸ˜’",
+                                                                                         "name":  "à¸£à¸±à¸‡à¹€à¸à¸µà¸¢à¸ˆ",
+                                                                                         "ps":  "PS.DISGUST",
+                                                                                         "cls":  "active-disgust",
+                                                                                         "color":  "var(--accent-slate)"
+                                                                                     },
+                                                                         "SURPRISE":  {
+                                                                                          "emoji":  "ðŸ˜²",
+                                                                                          "name":  "à¸›à¸£à¸°à¸«à¸¥à¸²à¸”à¹ƒà¸ˆ",
+                                                                                          "ps":  "PS.SURPRISE",
+                                                                                          "cls":  "active-surprise",
+                                                                                          "color":  "var(--accent-yellow)"
+                                                                                      },
+                                                                         "CALM":  {
+                                                                                      "emoji":  "ðŸ˜Œ",
+                                                                                      "name":  "à¸ªà¸‡à¸š",
+                                                                                      "ps":  "PS.CALM",
+                                                                                      "cls":  "active-calm",
+                                                                                      "color":  "var(--accent-green)"
+                                                                                  }
+                                                                     },
+                                                      "gen1_rules":  [
+                                                                         {
+                                                                             "id":  "NL-001",
+                                                                             "priority":  1,
+                                                                             "state":  "FLOW",
+                                                                             "action":  "ACT.MAINTAIN",
+                                                                             "condition":  "z.hrv \u003e 1.2 \u0026\u0026 z.hr \u003c -0.8 \u0026\u0026 z.gsr \u003c -0.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-004",
+                                                                             "priority":  1,
+                                                                             "state":  "STRESS",
+                                                                             "action":  "ACT.BREAK",
+                                                                             "condition":  "z.hrv \u003c -1.5 \u0026\u0026 z.hr \u003e 1.8 \u0026\u0026 z.gsr \u003e 2.0"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-002",
+                                                                             "priority":  2,
+                                                                             "state":  "CONFUSION",
+                                                                             "action":  "ACT.SIMPLIFY",
+                                                                             "condition":  "v.eeg \u003e 2.0 \u0026\u0026 z.hrv \u003c -0.7 \u0026\u0026 z.hr \u003e 1.2"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-003",
+                                                                             "priority":  2,
+                                                                             "state":  "READY",
+                                                                             "action":  "ACT.ANCHOR",
+                                                                             "condition":  "z.hrv \u003e 1.8 \u0026\u0026 z.hr \u003c -1.2 \u0026\u0026 z.gsr \u003c -1.0 \u0026\u0026 v.eeg \u003c 0.7"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-005",
+                                                                             "priority":  3,
+                                                                             "state":  "BOREDOM",
+                                                                             "action":  "ACT.SUMMARIZE",
+                                                                             "condition":  "z.gsr \u003e 1.8 \u0026\u0026 z.hr \u003c -0.5 \u0026\u0026 z.hrv \u003e -0.5 \u0026\u0026 z.hrv \u003c 0.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-006",
+                                                                             "priority":  3,
+                                                                             "state":  "EXCITEMENT",
+                                                                             "action":  "ACT.ENRICH",
+                                                                             "condition":  "z.hr \u003e 1.2 \u0026\u0026 z.gsr \u003e 1.2 \u0026\u0026 z.hrv \u003e -1.0 \u0026\u0026 z.hrv \u003c 0.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-007",
+                                                                             "priority":  2,
+                                                                             "state":  "FATIGUE",
+                                                                             "action":  "ACT.BREAK",
+                                                                             "condition":  "z.hrv \u003c -0.8 \u0026\u0026 Math.abs(z.hr) \u003c 0.5 \u0026\u0026 v.eeg \u003e 1.2 \u0026\u0026 v.eeg \u003c 2.0"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-008",
+                                                                             "priority":  4,
+                                                                             "state":  "NEUTRAL",
+                                                                             "action":  "ACT.MAINTAIN",
+                                                                             "condition":  "Math.abs(z.hrv) \u003c 0.4 \u0026\u0026 Math.abs(z.hr) \u003c 0.4 \u0026\u0026 Math.abs(z.gsr) \u003c 0.4"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-009",
+                                                                             "priority":  5,
+                                                                             "state":  "NEUTRAL",
+                                                                             "action":  "ACT.MAINTAIN",
+                                                                             "condition":  "Math.max(Math.abs(z.hrv), Math.abs(z.hr), Math.abs(z.gsr), Math.abs(z.rr)) \u003c 0.6"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-010",
+                                                                             "priority":  1,
+                                                                             "state":  "FRUSTRATION",
+                                                                             "action":  "ACT.REFRAME",
+                                                                             "condition":  "z.hrv \u003c -1.8 \u0026\u0026 z.hr \u003e 2.0 \u0026\u0026 z.gsr \u003e 2.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-011",
+                                                                             "priority":  1,
+                                                                             "state":  "ANXIETY",
+                                                                             "action":  "ACT.GROUND",
+                                                                             "condition":  "z.hrv \u003c -2.0 \u0026\u0026 z.hr \u003e 2.2 \u0026\u0026 z.gsr \u003e 2.0 \u0026\u0026 z.rr \u003e 1.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-012",
+                                                                             "priority":  3,
+                                                                             "state":  "CURIOSITY",
+                                                                             "action":  "ACT.EXPLORE",
+                                                                             "condition":  "z.hr \u003e 0.5 \u0026\u0026 Math.abs(z.gsr) \u003c 0.8 \u0026\u0026 z.hrv \u003e 0.3"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-013",
+                                                                             "priority":  3,
+                                                                             "state":  "DISGUST",
+                                                                             "action":  "ACT.REDIRECT",
+                                                                             "condition":  "z.hrv \u003c -1.0 \u0026\u0026 z.gsr \u003e 1.5 \u0026\u0026 Math.abs(z.hr) \u003e 0.8"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-014",
+                                                                             "priority":  2,
+                                                                             "state":  "SURPRISE",
+                                                                             "action":  "ACT.STABILIZE",
+                                                                             "condition":  "z.hr \u003e 2.0 \u0026\u0026 z.gsr \u003e 2.0 \u0026\u0026 z.hrv \u003e -0.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-015",
+                                                                             "priority":  4,
+                                                                             "state":  "CALM",
+                                                                             "action":  "ACT.SUSTAIN",
+                                                                             "condition":  "z.hrv \u003e 2.0 \u0026\u0026 z.hr \u003c -1.5 \u0026\u0026 z.gsr \u003c -1.5"
+                                                                         }
+                                                                     ],
+                                                      "gen2_rules":  [
+                                                                         {
+                                                                             "id":  "NL-001",
+                                                                             "priority":  1,
+                                                                             "state":  "FLOW",
+                                                                             "action":  "ACT.MAINTAIN",
+                                                                             "condition":  "z.hrv \u003e 1.2 \u0026\u0026 z.hr \u003c -0.8 \u0026\u0026 z.gsr \u003c -0.5 \u0026\u0026 (b?.alpha ?? 0) \u003e 1.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-004",
+                                                                             "priority":  1,
+                                                                             "state":  "STRESS",
+                                                                             "action":  "ACT.BREAK",
+                                                                             "condition":  "z.hrv \u003c -1.5 \u0026\u0026 z.hr \u003e 1.8 \u0026\u0026 z.gsr \u003e 2.0"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-002",
+                                                                             "priority":  2,
+                                                                             "state":  "CONFUSION",
+                                                                             "action":  "ACT.SIMPLIFY",
+                                                                             "condition":  "v.eeg \u003e 2.0 \u0026\u0026 z.hrv \u003c -0.7 \u0026\u0026 z.hr \u003e 1.2 \u0026\u0026 (b?.thetaAlphaRatio ?? 1) \u003e 1.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-003",
+                                                                             "priority":  2,
+                                                                             "state":  "READY",
+                                                                             "action":  "ACT.ANCHOR",
+                                                                             "condition":  "z.hrv \u003e 1.8 \u0026\u0026 z.hr \u003c -1.2 \u0026\u0026 z.gsr \u003c -1.0 \u0026\u0026 v.eeg \u003c 0.7 \u0026\u0026 (b?.alpha ?? 0) \u003e 1.2"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-005",
+                                                                             "priority":  3,
+                                                                             "state":  "BOREDOM",
+                                                                             "action":  "ACT.SUMMARIZE",
+                                                                             "condition":  "z.gsr \u003e 1.8 \u0026\u0026 z.hr \u003c -0.5 \u0026\u0026 z.hrv \u003e -0.5 \u0026\u0026 z.hrv \u003c 0.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-006",
+                                                                             "priority":  3,
+                                                                             "state":  "EXCITEMENT",
+                                                                             "action":  "ACT.ENRICH",
+                                                                             "condition":  "z.hr \u003e 1.2 \u0026\u0026 z.gsr \u003e 1.2 \u0026\u0026 z.hrv \u003e -1.0 \u0026\u0026 z.hrv \u003c 0.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-007",
+                                                                             "priority":  2,
+                                                                             "state":  "FATIGUE",
+                                                                             "action":  "ACT.BREAK",
+                                                                             "condition":  "z.hrv \u003c -0.8 \u0026\u0026 Math.abs(z.hr) \u003c 0.5 \u0026\u0026 v.eeg \u003e 1.2 \u0026\u0026 v.eeg \u003c 2.0 \u0026\u0026 (b?.theta ?? 0) \u003e 1.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-008",
+                                                                             "priority":  4,
+                                                                             "state":  "NEUTRAL",
+                                                                             "action":  "ACT.MAINTAIN",
+                                                                             "condition":  "Math.abs(z.hrv) \u003c 0.4 \u0026\u0026 Math.abs(z.hr) \u003c 0.4 \u0026\u0026 Math.abs(z.gsr) \u003c 0.4"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-009",
+                                                                             "priority":  5,
+                                                                             "state":  "NEUTRAL",
+                                                                             "action":  "ACT.MAINTAIN",
+                                                                             "condition":  "Math.max(Math.abs(z.hrv), Math.abs(z.hr), Math.abs(z.gsr), Math.abs(z.rr)) \u003c 0.6"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-010",
+                                                                             "priority":  1,
+                                                                             "state":  "FRUSTRATION",
+                                                                             "action":  "ACT.REFRAME",
+                                                                             "condition":  "z.hrv \u003c -1.8 \u0026\u0026 z.hr \u003e 2.0 \u0026\u0026 z.gsr \u003e 2.5 \u0026\u0026 (b?.thetaAlphaRatio ?? 1) \u003e 2.0"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-011",
+                                                                             "priority":  1,
+                                                                             "state":  "ANXIETY",
+                                                                             "action":  "ACT.GROUND",
+                                                                             "condition":  "z.hrv \u003c -2.0 \u0026\u0026 z.hr \u003e 2.2 \u0026\u0026 z.rr \u003e 1.5 \u0026\u0026 (b?.beta ?? 0) \u003e 2.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-012",
+                                                                             "priority":  3,
+                                                                             "state":  "CURIOSITY",
+                                                                             "action":  "ACT.EXPLORE",
+                                                                             "condition":  "z.hr \u003e 0.5 \u0026\u0026 Math.abs(z.gsr) \u003c 0.8 \u0026\u0026 z.hrv \u003e 0.3 \u0026\u0026 (b?.gamma ?? 0) \u003e 1.2 \u0026\u0026 (b?.theta ?? 0) \u003e 1.0"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-013",
+                                                                             "priority":  3,
+                                                                             "state":  "DISGUST",
+                                                                             "action":  "ACT.REDIRECT",
+                                                                             "condition":  "z.hrv \u003c -1.0 \u0026\u0026 z.gsr \u003e 1.5 \u0026\u0026 Math.abs(z.hr) \u003e 0.8 \u0026\u0026 (b?.beta ?? 0) \u003e 1.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-014",
+                                                                             "priority":  2,
+                                                                             "state":  "SURPRISE",
+                                                                             "action":  "ACT.STABILIZE",
+                                                                             "condition":  "z.hr \u003e 2.0 \u0026\u0026 z.gsr \u003e 2.0 \u0026\u0026 z.hrv \u003e -0.5 \u0026\u0026 (b?.gamma ?? 0) \u003e 1.5"
+                                                                         },
+                                                                         {
+                                                                             "id":  "NL-015",
+                                                                             "priority":  4,
+                                                                             "state":  "CALM",
+                                                                             "action":  "ACT.SUSTAIN",
+                                                                             "condition":  "z.hrv \u003e 2.0 \u0026\u0026 z.hr \u003c -1.5 \u0026\u0026 z.gsr \u003c -1.5 \u0026\u0026 (b?.alpha ?? 0) \u003e 2.0 \u0026\u0026 (b?.beta ?? 0) \u003c 0.8"
+                                                                         }
+                                                                     ]
+                                                  },
+                             "integration_audit":  {
+                                                       "document_token_count":  64,
+                                                       "code_token_count":  27,
+                                                       "document_only_tokens":  [
+                                                                                    "ACT.CHALLENGE",
+                                                                                    "ACT.CLARIFY",
+                                                                                    "ACT.CONTINUE",
+                                                                                    "ACT.FREEZE",
+                                                                                    "ACT.XXX",
+                                                                                    "AT.ART",
+                                                                                    "AT.CALIB",
+                                                                                    "AT.CONFIDENCE",
+                                                                                    "AT.GSR",
+                                                                                    "AT.HRV",
+                                                                                    "AT.IMPEDANCE",
+                                                                                    "AT.LATENCY",
+                                                                                    "AT.N400",
+                                                                                    "AT.RESP",
+                                                                                    "AT.SESSION",
+                                                                                    "BS.ACC",
+                                                                                    "BS.GSR",
+                                                                                    "BS.HR",
+                                                                                    "BS.HRV",
+                                                                                    "BS.RESP",
+                                                                                    "BS.TEMP",
+                                                                                    "CS.COGNITIVE_LOAD",
+                                                                                    "CS.DROWSINESS",
+                                                                                    "CS.ENGAGEMENT",
+                                                                                    "CS.VALENCE_INDEX",
+                                                                                    "NS.ALPHA",
+                                                                                    "NS.ALPHA_H",
+                                                                                    "NS.BETA_H",
+                                                                                    "NS.DELTA",
+                                                                                    "NS.ERP",
+                                                                                    "NS.GAMMA",
+                                                                                    "NS.THETA",
+                                                                                    "PS.AMBIGUOUS",
+                                                                                    "PS.STRESS",
+                                                                                    "RT.ALPHA",
+                                                                                    "RT.BETA_H",
+                                                                                    "RT.HRV",
+                                                                                    "RT.SIGNAL",
+                                                                                    "RT.THETA"
+                                                                                ],
+                                                       "code_only_tokens":  [
+                                                                                "ACT.SUMMARIZE",
+                                                                                "PS.IDLE"
+                                                                            ],
+                                                       "runtime_files_scanned":  [
+                                                                                     "Nuengdeaw_Core.js",
+                                                                                     "Nuengdeaw_AI_Gen_1_for_BioSignal.js",
+                                                                                     "Nuengdeaw_AI_Gen_2_for_NeuroSignal.js",
+                                                                                     "Nuengdeaw_Boot_Chain.js",
+                                                                                     "Nuengdeaw_Sim_Human1.js",
+                                                                                     "Nuengdeaw_Sim_Human2.js"
+                                                                                 ],
+                                                       "findings":  [
+                                                                        {
+                                                                            "id":  "F-001",
+                                                                            "severity":  "high",
+                                                                            "summary":  "à¹‚à¸„à¹‰à¸”à¹ƒà¸Šà¹‰ ACT.SUMMARIZE à¹à¸•à¹ˆà¹„à¸¡à¹ˆà¸žà¸šà¹ƒà¸™à¸¡à¸²à¸•à¸£à¸à¸²à¸™à¸ˆà¸²à¸à¹€à¸­à¸à¸ªà¸²à¸£ Word",
+                                                                            "impact":  "action à¸™à¸µà¹‰à¹„à¸¡à¹ˆà¸¡à¸µ canonical definition à¸à¸¥à¸²à¸‡ à¸—à¸³à¹ƒà¸«à¹‰à¸•à¸µà¸„à¸§à¸²à¸¡à¹à¸¥à¸°à¸‚à¸¢à¸²à¸¢à¸œà¸¥à¸•à¹ˆà¸­à¹„à¸¡à¹ˆà¹à¸™à¹ˆà¸™à¸­à¸™"
+                                                                        },
+                                                                        {
+                                                                            "id":  "F-002",
+                                                                            "severity":  "high",
+                                                                            "summary":  "à¹‚à¸„à¹‰à¸”à¹ƒà¸Šà¹‰ PS.IDLE à¹à¸•à¹ˆà¹„à¸¡à¹ˆà¸žà¸šà¹ƒà¸™à¸¡à¸²à¸•à¸£à¸à¸²à¸™ state à¸‚à¸­à¸‡à¹€à¸­à¸à¸ªà¸²à¸£ Word",
+                                                                            "impact":  "state machine à¹ƒà¸™ runtime à¹„à¸¡à¹ˆà¸•à¸£à¸‡à¸à¸±à¸šà¸ªà¹€à¸›à¸à¸à¸¥à¸²à¸‡"
+                                                                        },
+                                                                        {
+                                                                            "id":  "F-003",
+                                                                            "severity":  "medium",
+                                                                            "summary":  "à¸¡à¸²à¸•à¸£à¸à¸²à¸™à¸¡à¸µ namespace à¸„à¸£à¸šà¸£à¸°à¸”à¸±à¸š BS/NS/PS/ACT/RT/AT/CS à¹à¸•à¹ˆ runtime à¹ƒà¸Šà¹‰à¸ˆà¸£à¸´à¸‡à¹€à¸žà¸µà¸¢à¸‡à¸šà¸²à¸‡à¸ªà¹ˆà¸§à¸™",
+                                                                            "impact":  "à¹€à¸­à¸à¸ªà¸²à¸£à¸™à¸³à¸«à¸™à¹‰à¸²à¹‚à¸„à¹‰à¸”à¸¡à¸²à¸ à¸—à¸³à¹ƒà¸«à¹‰à¸£à¸°à¸šà¸šà¸¢à¸±à¸‡à¹ƒà¸Šà¹‰à¸›à¸£à¸°à¹‚à¸¢à¸Šà¸™à¹Œà¸ˆà¸²à¸à¸ªà¹€à¸›à¸à¹„à¸”à¹‰à¹„à¸¡à¹ˆà¹€à¸•à¹‡à¸¡à¸—à¸µà¹ˆ"
+                                                                        },
+                                                                        {
+                                                                            "id":  "F-004",
+                                                                            "severity":  "medium",
+                                                                            "summary":  "logic rules à¸–à¸¹à¸ hardcode à¸‹à¹‰à¸³à¹ƒà¸™ Gen1 à¹à¸¥à¸° Gen2",
+                                                                            "impact":  "à¹à¸à¹‰à¸ªà¹€à¸›à¸à¸„à¸£à¸±à¹‰à¸‡à¹€à¸”à¸µà¸¢à¸§à¹„à¸¡à¹ˆà¸ˆà¸š à¸•à¹‰à¸­à¸‡à¹„à¸¥à¹ˆà¹à¸à¹‰à¸«à¸¥à¸²à¸¢à¹„à¸Ÿà¸¥à¹Œà¹à¸¥à¸°à¹€à¸ªà¸µà¹ˆà¸¢à¸‡ divergence"
+                                                                        },
+                                                                        {
+                                                                            "id":  "F-005",
+                                                                            "severity":  "medium",
+                                                                            "summary":  "à¸žà¸šà¸­à¸²à¸à¸²à¸£ encoding à¹€à¸žà¸µà¹‰à¸¢à¸™à¹ƒà¸™à¸„à¸­à¸¡à¹€à¸¡à¸™à¸•à¹Œ/à¸‚à¹‰à¸­à¸„à¸§à¸²à¸¡à¸‚à¸­à¸‡à¹„à¸Ÿà¸¥à¹Œ JavaScript à¸šà¸²à¸‡à¹„à¸Ÿà¸¥à¹Œ",
+                                                                            "impact":  "à¸¥à¸”à¸„à¸§à¸²à¸¡à¸­à¹ˆà¸²à¸™à¸‡à¹ˆà¸²à¸¢à¸‚à¸­à¸‡à¹€à¸­à¸à¸ªà¸²à¸£à¸›à¸£à¸°à¸à¸­à¸šà¹ƒà¸™à¹‚à¸„à¹‰à¸”à¹à¸¥à¸°à¹€à¸ªà¸µà¹ˆà¸¢à¸‡à¸•à¹ˆà¸­à¸à¸²à¸£à¸šà¸³à¸£à¸¸à¸‡à¸£à¸±à¸à¸©à¸²"
+                                                                        }
+                                                                    ],
+                                                       "recommendations":  [
+                                                                               "à¸¢à¹‰à¸²à¸¢ rule definitions à¹à¸¥à¸° action/state mappings à¸­à¸­à¸à¸ˆà¸²à¸ JavaScript à¹„à¸›à¸­à¸¢à¸¹à¹ˆà¹ƒà¸™ JSON à¸à¸¥à¸²à¸‡",
+                                                                               "à¸à¸³à¸«à¸™à¸”à¸§à¹ˆà¸² ACT.SUMMARIZE à¹à¸¥à¸° PS.IDLE à¸ˆà¸°à¹€à¸žà¸´à¹ˆà¸¡à¹€à¸‚à¹‰à¸² standard à¸«à¸£à¸·à¸­à¸ˆà¸°à¸–à¸­à¸”à¸­à¸­à¸à¸ˆà¸²à¸ runtime",
+                                                                               "à¹€à¸žà¸´à¹ˆà¸¡ loader/validator à¸—à¸µà¹ˆà¸­à¹ˆà¸²à¸™ JSON à¸à¸¥à¸²à¸‡à¹à¸¥à¹‰à¸§à¸•à¸£à¸§à¸ˆ namespace à¸à¹ˆà¸­à¸™ bootstrap à¸£à¸°à¸šà¸š",
+                                                                               "à¹à¸¢à¸ vocab, thresholds, rules, simulator profiles à¸­à¸­à¸à¹€à¸›à¹‡à¸™à¸„à¸™à¸¥à¸°à¹„à¸Ÿà¸¥à¹Œà¸‚à¹‰à¸­à¸¡à¸¹à¸¥",
+                                                                               "à¹à¸à¹‰ encoding à¸‚à¸­à¸‡à¹„à¸Ÿà¸¥à¹Œ JavaScript à¹ƒà¸«à¹‰à¹€à¸›à¹‡à¸™ UTF-8 à¹à¸šà¸šà¸ªà¸¡à¹ˆà¸³à¹€à¸ªà¸¡à¸­"
+                                                                           ]
+                                                   },
+                             "workspace_audit":  {
+                                                     "root_layout":  {
+                                                                         "total_files":  18,
+                                                                         "extensions":  {
+                                                                                            ".html":  11,
+                                                                                            ".js":  6,
+                                                                                            ".docx":  1
+                                                                                        }
+                                                                     },
+                                                     "notable_files":  [
+                                                                           {
+                                                                               "name":  "tawanbook_3d_demo_BioSignal.html",
+                                                                               "role":  "à¸«à¸™à¹‰à¸²à¹€à¸”à¹‚à¸¡à¸‚à¸™à¸²à¸”à¹ƒà¸«à¸à¹ˆ"
+                                                                           },
+                                                                           {
+                                                                               "name":  "neurobook_3d_demo_NeuroSignal.html",
+                                                                               "role":  "à¸«à¸™à¹‰à¸²à¹€à¸”à¹‚à¸¡à¸‚à¸™à¸²à¸”à¹ƒà¸«à¸à¹ˆ"
+                                                                           },
+                                                                           {
+                                                                               "name":  "REAL-TIME_SIMULATION_ENGINE.html",
+                                                                               "role":  "à¸«à¸™à¹‰à¸²à¸ˆà¸³à¸¥à¸­à¸‡à¸à¸²à¸£à¸—à¸³à¸‡à¸²à¸™à¹à¸šà¸šà¹€à¸£à¸µà¸¢à¸¥à¹„à¸—à¸¡à¹Œ"
+                                                                           },
+                                                                           {
+                                                                               "name":  "Nuengdeaw_Core.js",
+                                                                               "role":  "à¹à¸à¸™à¸à¸¥à¸²à¸‡à¸‚à¸­à¸‡à¸£à¸°à¸šà¸š"
+                                                                           },
+                                                                           {
+                                                                               "name":  "Nuengdeaw_AI_Gen_1_for_BioSignal.js",
+                                                                               "role":  "à¹€à¸­à¸™à¸ˆà¸´à¸™ Gen1"
+                                                                           },
+                                                                           {
+                                                                               "name":  "Nuengdeaw_AI_Gen_2_for_NeuroSignal.js",
+                                                                               "role":  "à¹€à¸­à¸™à¸ˆà¸´à¸™ Gen2"
+                                                                           },
+                                                                           {
+                                                                               "name":  "Phasa_Tawan_Signal_Language_Standard.docx",
+                                                                               "role":  "à¹€à¸­à¸à¸ªà¸²à¸£à¸¡à¸²à¸•à¸£à¸à¸²à¸™à¸•à¹‰à¸™à¸—à¸²à¸‡"
+                                                                           }
+                                                                       ],
+                                                     "structure_status":  "à¸„à¹ˆà¸­à¸™à¸‚à¹‰à¸²à¸‡à¸£à¸à¹ƒà¸™à¸£à¸°à¸”à¸±à¸š root à¹€à¸žà¸£à¸²à¸°à¸«à¸™à¹‰à¸²à¹€à¸”à¹‚à¸¡ à¹€à¸­à¸™à¸ˆà¸´à¸™ à¹€à¸­à¸à¸ªà¸²à¸£à¸¡à¸²à¸•à¸£à¸à¸²à¸™ à¹à¸¥à¸°à¹„à¸Ÿà¸¥à¹Œ utility à¸–à¸¹à¸à¸§à¸²à¸‡à¸£à¸§à¸¡à¸à¸±à¸™à¸—à¸±à¹‰à¸‡à¸«à¸¡à¸”",
+                                                     "organization_gaps":  [
+                                                                               "à¸¢à¸±à¸‡à¹„à¸¡à¹ˆà¸¡à¸µà¹‚à¸Ÿà¸¥à¹€à¸”à¸­à¸£à¹Œ docs à¸ªà¸³à¸«à¸£à¸±à¸šà¹€à¸­à¸à¸ªà¸²à¸£à¸•à¹‰à¸™à¸‰à¸šà¸±à¸š",
+                                                                               "à¸¢à¸±à¸‡à¹„à¸¡à¹ˆà¸¡à¸µà¹‚à¸Ÿà¸¥à¹€à¸”à¸­à¸£à¹Œ data/standards à¸ªà¸³à¸«à¸£à¸±à¸š source-of-truth à¹€à¸”à¸´à¸¡",
+                                                                               "à¸¢à¸±à¸‡à¹„à¸¡à¹ˆà¸¡à¸µà¹‚à¸Ÿà¸¥à¹€à¸”à¸­à¸£à¹Œ app/pages à¸«à¸£à¸·à¸­ demos à¸ªà¸³à¸«à¸£à¸±à¸šà¹à¸¢à¸à¸«à¸™à¹‰à¸² HTML",
+                                                                               "à¸¢à¸±à¸‡à¹„à¸¡à¹ˆà¸¡à¸µ schema validator à¸«à¸£à¸·à¸­ manifest à¸à¸¥à¸²à¸‡à¸‚à¸­à¸‡à¸£à¸°à¸šà¸š"
+                                                                           ],
+                                                     "suggested_target_layout":  [
+                                                                                     "docs/Phasa_Tawan_Signal_Language_Standard.docx",
+                                                                                     "data/standards/phasa_tawan_standard.json",
+                                                                                     "src/core/Nuengdeaw_Core.js",
+                                                                                     "src/engines/Nuengdeaw_AI_Gen_1_for_BioSignal.js",
+                                                                                     "src/engines/Nuengdeaw_AI_Gen_2_for_NeuroSignal.js",
+                                                                                     "src/bootstrap/Nuengdeaw_Boot_Chain.js",
+                                                                                     "demos/*.html"
+                                                                                 ]
+                                                 },
+                             "current_runtime_snapshot":  {
+                                                              "core_states_in_code":  [
+                                                                                          "PS.ANXIETY",
+                                                                                          "PS.BOREDOM",
+                                                                                          "PS.CALM",
+                                                                                          "PS.CONFUSION",
+                                                                                          "PS.CURIOSITY",
+                                                                                          "PS.DISGUST",
+                                                                                          "PS.DROWSY",
+                                                                                          "PS.ENCODING",
+                                                                                          "PS.EXCITEMENT",
+                                                                                          "PS.FLOW",
+                                                                                          "PS.FRUSTRATION",
+                                                                                          "PS.IDLE",
+                                                                                          "PS.NEUTRAL",
+                                                                                          "PS.OVERLOAD",
+                                                                                          "PS.SURPRISE"
+                                                                                      ],
+                                                              "gen1_actions_in_code":  [
+                                                                                           "ACT.ANCHOR",
+                                                                                           "ACT.BREAK",
+                                                                                           "ACT.ENRICH",
+                                                                                           "ACT.EXPLORE",
+                                                                                           "ACT.GROUND",
+                                                                                           "ACT.MAINTAIN",
+                                                                                           "ACT.REDIRECT",
+                                                                                           "ACT.REFRAME",
+                                                                                           "ACT.SIMPLIFY",
+                                                                                           "ACT.STABILIZE",
+                                                                                           "ACT.SUMMARIZE",
+                                                                                           "ACT.SUSTAIN"
+                                                                                       ],
+                                                              "gen2_actions_in_code":  [
+                                                                                           "ACT.ANCHOR",
+                                                                                           "ACT.BREAK",
+                                                                                           "ACT.ENRICH",
+                                                                                           "ACT.EXPLORE",
+                                                                                           "ACT.GROUND",
+                                                                                           "ACT.MAINTAIN",
+                                                                                           "ACT.REDIRECT",
+                                                                                           "ACT.REFRAME",
+                                                                                           "ACT.SIMPLIFY",
+                                                                                           "ACT.STABILIZE",
+                                                                                           "ACT.SUMMARIZE",
+                                                                                           "ACT.SUSTAIN"
+                                                                                       ]
+                                                          }
+                         }
+}

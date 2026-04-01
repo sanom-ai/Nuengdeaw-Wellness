@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>คู่มือระบบ Nuengdeaw Wellness Monitor</title>
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --panel:#ffffff;
+      --ink:#132238;
+      --muted:#58708e;
+      --line:#d9e4f0;
+      --brand:#00a8b5;
+      --brand2:#1769aa;
+      --accent:#d88a16;
+      --soft:#eef7fb;
+      --shadow:0 10px 30px rgba(19,34,56,.08);
+      --font-body:"Sarabun","Noto Sans Thai","Segoe UI",Tahoma,sans-serif;
+      --font-head:"Prompt","Sarabun","Noto Sans Thai","Segoe UI",sans-serif;
+      --font-ui:"IBM Plex Sans Thai","Sarabun","Noto Sans Thai","Segoe UI",sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:var(--font-body);font-size:17px;font-weight:400;letter-spacing:.01em;color:var(--ink);background:linear-gradient(180deg, rgba(0,168,181,.04), transparent 180px),var(--bg);line-height:1.82;text-rendering:optimizeLegibility;}
+    .layout{display:grid;grid-template-columns:280px minmax(0,1fr);min-height:100vh;}
+    .sidebar{position:sticky;top:0;align-self:start;height:100vh;overflow:auto;background:#0f1f33;color:#eaf4ff;padding:28px 22px;}
+    .sidebar h1{margin:0 0 10px;font-family:var(--font-head);font-size:1.28rem;font-weight:700;line-height:1.45;letter-spacing:.02em;}
+    .sidebar p{margin:0 0 18px;color:#a8bfd6;font-family:var(--font-ui);font-size:.95rem;font-weight:400;}
+    .sidebar a{display:block;color:#d8ebff;text-decoration:none;padding:9px 12px;border-radius:10px;margin-bottom:4px;font-family:var(--font-ui);font-size:.95rem;font-weight:500;letter-spacing:.01em;}
+    .sidebar a:hover{background:rgba(255,255,255,.08)}
+    .sidebar .note{margin-top:20px;padding:12px 14px;border:1px solid rgba(255,255,255,.12);border-radius:12px;background:rgba(255,255,255,.05);font-family:var(--font-ui);font-size:.88rem;line-height:1.75;color:#b9cde1;}
+    main{padding:34px clamp(20px,4vw,46px) 60px;}
+    .hero{background:linear-gradient(135deg, #ffffff, #f0fbff);border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow);margin-bottom:24px;}
+    .hero h2{margin:0 0 12px;font-family:var(--font-head);font-size:2.08rem;font-weight:700;line-height:1.32;letter-spacing:-.01em;}
+    .hero p{margin:0;color:var(--muted);max-width:920px;font-size:1.03rem;}
+    .tag-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;}
+    .tag{display:inline-flex;align-items:center;padding:8px 13px;border-radius:999px;background:var(--soft);color:var(--brand2);border:1px solid #d8eaf7;font-family:var(--font-ui);font-size:.88rem;font-weight:600;letter-spacing:.01em;}
+    section{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow);margin-bottom:20px;}
+    h3{margin:0 0 12px;font-family:var(--font-head);font-size:1.52rem;font-weight:700;line-height:1.42;letter-spacing:-.01em;}
+    h4{margin:20px 0 8px;font-family:var(--font-head);font-size:1.10rem;font-weight:600;color:var(--brand2);letter-spacing:.01em;}
+    p{margin:0 0 12px;font-size:1rem}
+    ul,ol{margin:0 0 14px 22px;padding:0}
+    li{margin-bottom:6px;font-size:.98rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:12px;}
+    .card{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fcfeff;}
+    .card h5{margin:0 0 8px;font-family:var(--font-head);font-size:1.04rem;font-weight:600;color:var(--brand2);}
+    .callout{padding:14px 16px;border-radius:16px;background:#fff8e8;border:1px solid #f2d59b;color:#81560b;margin-top:10px;}
+    table{width:100%;border-collapse:collapse;margin-top:14px;font-size:.95rem;}
+    th,td{border:1px solid var(--line);padding:12px 10px;text-align:left;vertical-align:top;line-height:1.7;}
+    th{background:#f3f9fd;color:var(--brand2);}
+    .figure{margin:18px 0 8px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff;}
+    .figure img{display:block;width:100%;height:auto;background:#f8fbfd;}
+    .figcap{padding:12px 14px;background:#fbfdff;border-top:1px solid var(--line);color:var(--muted);font-family:var(--font-ui);font-size:.94rem;}
+    .footer{color:var(--muted);font-family:var(--font-ui);font-size:.95rem;padding:16px 2px 0;line-height:1.9;}
+    code{background:#eff6fb;padding:2px 6px;border-radius:6px;color:#0e5a87;font-family:"IBM Plex Mono","Cascadia Code","Consolas",monospace;font-size:.92em}
+    @media (max-width: 980px){.layout{grid-template-columns:1fr}.sidebar{position:relative;height:auto}main{padding-top:20px}}
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>คู่มือระบบ<br>Nuengdeaw Wellness Monitor</h1>
+      <p>เอกสารประกอบการใช้งานระบบ Nuengdeaw Wellness Monitor</p>
+      <a href="#overview">ภาพรวมระบบ</a>
+      <a href="#devices">อุปกรณ์ที่รองรับ</a>
+      <a href="#signals">สัญญาณที่ระบบรับ</a>
+      <a href="#baseline">Baseline และ Profile</a>
+      <a href="#connect">การเชื่อมต่ออุปกรณ์จริง</a>
+      <a href="#workflow">ลำดับการทำงาน</a>
+      <a href="#screens">ภาพหน้าจอประกอบ</a>
+      <a href="#states">ภาวะที่ระบบประเมินได้</a>
+      <a href="#handoff">การพิมพ์และการส่งต่อ</a>
+      <a href="#clinic">การใช้งานงานคลินิก</a>
+      <div class="note">เอกสารฉบับนี้จัดทำเพื่อใช้เป็นคู่มือประกอบการใช้งานและการส่งมอบระบบ</div>
+    </aside>
+
+    <main>
+      <div class="hero">
+        <h2>คู่มือใช้งานระบบติดตามสัญญาณชีวภาพและประเมินภาวะผู้ใช้งาน</h2>
+        <p>ระบบนี้ใช้สำหรับอ่านสัญญาณจาก Wearable หรือข้อมูลจำลอง แล้วประเมินสภาวะของผู้ใช้งานแบบเรียลไทม์ พร้อมแสดงผลบนหน้าจอ บันทึกประวัติ พิมพ์รายงาน และส่งต่อผลไปยังขั้นตอนดูแลถัดไป</p>
+        <div class="tag-row">
+          <div class="tag">คู่มือประกอบระบบ</div>
+          <div class="tag">เหมาะกับใช้เป็นคู่มือประกอบงาน</div>
+          <div class="tag">รวมภาพหน้าจอประกอบ</div>
+        </div>
+      </div>
+
+      <section id="overview">
+        <h3>1. ภาพรวมระบบ</h3>
+        <p><strong>Nuengdeaw Wellness Monitor</strong> เป็นระบบหน้าเว็บสำหรับติดตามสัญญาณชีวภาพและประเมินสภาวะผู้ใช้งาน โดยข้อมูลที่ใช้หลัก ๆ ได้แก่ HR, HRV, GSR/EDA, RR และ EEG bands จากนั้นระบบจะประมวลผลและสรุปผลในรูปแบบ Assessment, Dashboard, การแจ้งเตือน และรายงานสำหรับการส่งต่อ</p>
+        <div class="grid">
+          <div class="card">
+            <h5>ใช้ทำอะไร</h5>
+            <ul>
+              <li>ติดตามสัญญาณชีวภาพแบบทันที</li>
+              <li>ประเมินภาวะความพร้อมและความเสี่ยง</li>
+              <li>บันทึกผลแต่ละครั้งเป็นประวัติ</li>
+              <li>พิมพ์รายงานและส่งต่อข้อมูล</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h5>รูปแบบการใช้งาน</h5>
+            <ul>
+              <li>Sim Mode สำหรับทดสอบระบบ</li>
+              <li>Wearable Mode สำหรับอุปกรณ์จริง</li>
+              <li>Personal Profile สำหรับใช้งานทั่วไป</li>
+              <li>Clinic Profile สำหรับงานคลินิก</li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout">หมายเหตุสำคัญ: จากการตรวจสอบค่าตั้งต้นในระบบ ปัจจุบันตัวแปรอุปกรณ์ถูกตั้งเป็น <strong>mock</strong> จึงยังเป็นโหมดข้อมูลจำลอง หากจะใช้งานกับอุปกรณ์จริง ต้องปรับการตั้งค่าอุปกรณ์ก่อน</div>
+      </section>
+
+      <section id="devices">
+        <h3>2. อุปกรณ์ที่รองรับ</h3>
+        <div class="grid">
+          <div class="card"><h5>Polar H10 / Verity Sense</h5><p>ใช้สำหรับอ่าน HR และ RR interval เพื่อนำไปคำนวณ HRV ผ่าน Web Bluetooth</p></div>
+          <div class="card"><h5>Empatica E4</h5><p>ใช้สำหรับอ่าน HR, HRV, GSR/EDA และ RR โดยเชื่อมผ่าน E4 Streaming Server และ WebSocket</p></div>
+          <div class="card"><h5>Muse 2 / Muse S</h5><p>ใช้สำหรับอ่านสัญญาณ EEG และคำนวณ Theta, Alpha, Beta, Gamma รวมถึง Theta/Alpha Ratio</p></div>
+          <div class="card"><h5>Generic Device</h5><p>เป็นช่องทางขยายระบบสำหรับอุปกรณ์อื่น ๆ โดยต้องพัฒนา connector และ mapping เพิ่มเอง</p></div>
+        </div>
+      </section>
+
+      <section id="signals">
+        <h3>3. ระบบรับสัญญาณอะไรบ้าง</h3>
+        <table>
+          <thead><tr><th>สัญญาณ</th><th>ความหมาย</th><th>การใช้งานในระบบ</th></tr></thead>
+          <tbody>
+            <tr><td>HR</td><td>อัตราการเต้นหัวใจ</td><td>ใช้ดูภาวะตื่นตัว ความเครียด และความผิดปกติของชีพจร</td></tr>
+            <tr><td>HRV (RMSSD)</td><td>ความแปรปรวนของช่วงการเต้นหัวใจ</td><td>ใช้ประเมินสมดุลระบบประสาทอัตโนมัติและภาวะเครียด</td></tr>
+            <tr><td>GSR / EDA</td><td>การตอบสนองทางไฟฟ้าของผิวหนัง</td><td>ใช้ดูระดับการตื่นตัวและการตอบสนองของระบบซิมพาเทติก</td></tr>
+            <tr><td>RR</td><td>อัตราการหายใจ</td><td>ใช้ตรวจภาวะหายใจเร็ว หายใจช้า หรือเสี่ยงหยุดหายใจ</td></tr>
+            <tr><td>EEG Bands</td><td>Theta, Alpha, Beta, Gamma</td><td>ใช้ประเมินภาระสมอง ความล้า และความพร้อมด้านการรับรู้</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="baseline">
+        <h3>4. Baseline และ Profile</h3>
+        <h4>Personal Baseline</h4>
+        <p>คือค่าพื้นฐานรายบุคคลในสภาวะพักนิ่ง ระบบจะเก็บตัวอย่างหลายครั้งแล้วคำนวณค่าเฉลี่ยของ HR, HRV, GSR และ RR จากนั้นนำไปสร้างเกณฑ์แบบ adaptive เพื่อให้ประเมินได้เหมาะกับแต่ละคนมากขึ้น</p>
+        <h4>Clinic Standard</h4>
+        <p>คือเกณฑ์มาตรฐานกลางของระบบสำหรับงานคลินิก ใช้มาตรฐานเดียวกันทุกเคส เพื่อให้เปรียบเทียบระหว่างรายได้ง่าย และเหมาะกับงานที่ต้องมีความสม่ำเสมอในการคัดกรอง</p>
+        <div class="grid">
+          <div class="card"><h5>Personal Profile</h5><ul><li>ใช้ baseline ส่วนบุคคลได้</li><li>ถ้ายังไม่ calibrate จะใช้ static fallback</li><li>เหมาะกับการติดตามรายบุคคล</li></ul></div>
+          <div class="card"><h5>Clinic Profile</h5><ul><li>บังคับใช้ clinic standard</li><li>รองรับการพิมพ์รายงาน</li><li>รองรับการส่งต่อแบบ handoff</li></ul></div>
+        </div>
+      </section>
+
+      <section id="connect">
+        <h3>5. ขั้นตอนการเชื่อมต่ออุปกรณ์จริง</h3>
+        <h4>Polar H10 / Polar Verity Sense</h4>
+        <ol><li>เปิดอุปกรณ์ Polar และตรวจสอบแบตเตอรี่</li><li>เปิด Bluetooth บนคอมพิวเตอร์</li><li>เปิดระบบผ่านเบราว์เซอร์ที่รองรับ Web Bluetooth</li><li>เปลี่ยนการตั้งค่าอุปกรณ์จาก <code>mock</code> เป็น <code>polar</code></li><li>เลือก <code>WEARABLE MODE</code> แล้วเริ่มสแกน</li><li>เลือกอุปกรณ์ Polar จากหน้าต่างเชื่อมต่อ</li></ol>
+        <h4>Empatica E4</h4>
+        <ol><li>เปิดอุปกรณ์ Empatica E4</li><li>เปิด <code>E4 Streaming Server</code></li><li>เปลี่ยนการตั้งค่าอุปกรณ์เป็น <code>empatica</code></li><li>เลือก <code>WEARABLE MODE</code> แล้วเริ่มสแกน</li><li>ระบบจะเชื่อมต่อผ่าน WebSocket และ subscribe ค่าที่จำเป็น</li></ol>
+        <h4>Muse 2 / Muse S</h4>
+        <ol><li>เปิดอุปกรณ์ Muse</li><li>เตรียม SDK หรือ <code>muse-js</code> ให้พร้อม</li><li>เปลี่ยนการตั้งค่าอุปกรณ์เป็น <code>muse</code></li><li>เลือก <code>WEARABLE MODE</code> แล้วเริ่มสแกน</li><li>ระบบจะอ่าน EEG readings และคำนวณค่า band power ที่เกี่ยวข้อง</li></ol>
+      </section>
+
+      <section id="workflow">
+        <h3>6. ลำดับการทำงานของระบบ</h3>
+        <ol><li>ผู้ใช้เลือกโหมดใช้งานและกำหนด Subject ID</li><li>ระบบอ่านข้อมูลจาก Sim หรือ Wearable</li><li>ตรวจสอบคุณภาพสัญญาณและ artifact</li><li>แยกค่า bio signals และ EEG bands</li><li>เปรียบเทียบกับ threshold ของ profile ที่เลือก</li><li>ประเมิน state และ critical alerts</li><li>แสดงผลในแท็บ Assessment</li><li>บันทึกข้อมูลลง session log และส่งออกได้เป็น CSV</li><li>ใน Clinic Profile สามารถพิมพ์หรือส่งต่อผลได้</li></ol>
+      </section>
+
+      <section id="screens">
+        <h3>7. ภาพหน้าจอประกอบ</h3>
+        <div class="figure"><img src="assets/screen_01_main_idle.png" alt="หน้าจอหลักของระบบ"><div class="figcap">ภาพที่ 1 หน้าจอหลักของระบบ แสดงแถบควบคุมด้านบน แผงสัญญาณทางซ้าย และพื้นที่ Assessment ด้านขวา</div></div>
+        <div class="figure"><img src="assets/screen_02_scanning.png" alt="หน้าจอระหว่างสแกน"><div class="figcap">ภาพที่ 2 หน้าจอระหว่างสแกน ใช้สื่อสารสถานะการอ่าน biosignal และความคืบหน้าของระบบ</div></div>
+        <div class="figure"><img src="assets/screen_03_assessment_result.png" alt="หน้าจอผลการประเมิน"><div class="figcap">ภาพที่ 3 ภาพผลการประเมินที่แนบมากับชุดคู่มือ ใช้เป็น placeholder หรือภาพอ้างอิงในงานเอกสารได้ทันที</div></div>
+        <div class="figure"><img src="assets/screen_04_dashboard.png" alt="หน้าจอ Dashboard"><div class="figcap">ภาพที่ 4 ภาพชุด Dashboard ที่รวมมาในชุดคู่มือ สามารถแทนที่ด้วยภาพใหม่ภายหลังได้หากต้องการมุมจับที่ละเอียดขึ้น</div></div>
+        <div class="figure"><img src="assets/screen_05_clinic_actions.png" alt="หน้าจอคลินิก"><div class="figcap">ภาพที่ 5 ภาพชุด Clinic Actions สำหรับใช้อธิบายโหมดคลินิกและ workflow การส่งต่อผล</div></div>
+      </section>
+
+      <section id="states">
+        <h3>8. ภาวะที่ระบบประเมินได้</h3>
+        <table>
+          <thead><tr><th>ภาวะ</th><th>ความหมายโดยสรุป</th><th>ลักษณะสัญญาณโดยสังเขป</th></tr></thead>
+          <tbody>
+            <tr><td>Flow</td><td>สมาธิดีและสมดุล</td><td>HR ปกติ, GSR อยู่ในเกณฑ์, HRV ดี</td></tr>
+            <tr><td>Alert / Ready</td><td>พร้อมใช้งานตามปกติ</td><td>ค่าชีวภาพอยู่ในช่วงปกติ, HRV ดี</td></tr>
+            <tr><td>Acute Stress</td><td>เครียดเฉียบพลัน</td><td>HR สูง, GSR สูง, HRV ลด, RR เพิ่ม</td></tr>
+            <tr><td>Confusion</td><td>สับสนหรือรับรู้ผิดปกติ</td><td>Theta สูง, HRV ลด, สัญญาณตื่นตัวผิดสมดุล</td></tr>
+            <tr><td>Low Arousal</td><td>ความตื่นตัวต่ำ</td><td>HR ต่ำ, GSR ต่ำ, การตอบสนองช้าลง</td></tr>
+            <tr><td>Fatigue / Drowsiness</td><td>อ่อนล้าหรือง่วง</td><td>Theta สูง, ความพร้อมลดลง, เสี่ยง microsleep</td></tr>
+            <tr><td>Neutral</td><td>อยู่ในเกณฑ์ปกติ</td><td>ค่าใกล้ baseline หรืออยู่ในช่วงที่คาดหมาย</td></tr>
+            <tr><td>Apnea Risk</td><td>เสี่ยงหยุดหายใจ</td><td>RR ต่ำมากกว่าปกติชัดเจน</td></tr>
+            <tr><td>Hyperventilation</td><td>หายใจเร็วผิดปกติ</td><td>RR สูงเกินเกณฑ์</td></tr>
+            <tr><td>High Cognitive Load</td><td>ภาระสมองสูง</td><td>Theta/Alpha ratio สูง</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="handoff">
+        <h3>9. การพิมพ์รายงานและการส่งต่อ</h3>
+        <h4>การพิมพ์รายงาน</h4>
+        <p>ใน Clinic Profile ผู้ใช้สามารถกด <code>PRINT</code> เพื่อสร้างรายงาน <strong>Clinic Screening Report</strong> ซึ่งมีข้อมูล Subject ID, Profile, Baseline Source, เวลาประเมิน, สรุปผล, ค่า HR/HRV/GSR/RR, ค่า Theta/Alpha รวมถึง Critical Alerts และ Findings</p>
+        <h4>การส่งต่อเข้าสู่ระบบกลาง</h4>
+        <p>ถ้ามีการตั้งค่า endpoint ผ่านปุ่ม <code>SET TARGET</code> ระบบจะส่งผลออกด้วย HTTP POST ในรูปแบบ JSON พร้อมข้อมูลสรุปของ state, สัญญาณหลัก, alerts และ findings</p>
+        <h4>การส่งออกแบบไฟล์ JSON Handoff</h4>
+        <p>หากยังไม่ได้ตั้ง endpoint หรือส่งไม่สำเร็จ ระบบจะสร้างไฟล์ JSON handoff ให้ดาวน์โหลดแทน เพื่อใช้ส่งต่อด้วยตนเองในขั้นตอนถัดไป</p>
+      </section>
+
+      <section id="clinic">
+        <h3>10. แนวทางใช้งานในงานคลินิก</h3>
+        <ol><li>เลือก Clinic Profile</li><li>กำหนด Subject ID หรือ Case ID</li><li>ตรวจว่า baseline source เป็น <code>clinic_standard</code></li><li>เชื่อมต่ออุปกรณ์จริงให้ครบถ้วน</li><li>กด Scan และตรวจผลใน Assessment</li><li>ถ้าพบ Critical Alert ให้หยุดกิจกรรมและประเมินอาการร่วมทันที</li><li>กด <code>PRINT</code> เพื่อพิมพ์รายงาน หรือกด <code>SEND TO</code> เพื่อส่งต่อ</li><li>ถ้าระบบกลางยังไม่พร้อม ให้ใช้ไฟล์ JSON handoff แทน</li></ol>
+        <div class="callout">เอกสารนี้เป็นคู่มือการใช้งานระบบ ไม่ใช่เครื่องมือวินิจฉัยทางการแพทย์โดยตรง การตัดสินใจเชิงคลินิกจริงควรอาศัยผู้เชี่ยวชาญหรือบุคลากรที่ได้รับอนุญาตประกอบเสมอ</div>
+      </section>
+
+      <div class="footer"><strong>ติดต่อ TAWAN</strong><br>หน่วยงาน/ผู้พัฒนาระบบ: TAWAN<br>ใช้ส่วนนี้สำหรับใส่ชื่อผู้ประสานงาน, เบอร์โทรศัพท์, อีเมล และช่องทางติดต่ออย่างเป็นทางการ</div>
+    </main>
+  </div>
+</body>
+</html>
+
+
+
