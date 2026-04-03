@@ -1,0 +1,38 @@
+﻿:root {
+  color-scheme: dark;
+  --bg: #07111f;
+  --panel: rgba(10, 24, 40, 0.68);
+  --panel-strong: rgba(13, 28, 46, 0.88);
+  --line: rgba(130, 191, 219, 0.16);
+  --text: #e8f6ff;
+  --text-soft: #9cb5c7;
+  --aura-cyan: #52f7d4;
+  --aura-blue: #4da7ff;
+  --aura-gold: #efc36d;
+  --aura-violet: #a97cff;
+  --danger: #ff6b81;
+  --ok: #4de8a8;
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+
+html, body, #app {
+  margin: 0;
+  min-height: 100%;
+  background:
+    radial-gradient(circle at top, rgba(77, 167, 255, 0.14), transparent 25%),
+    radial-gradient(circle at 80% 20%, rgba(82, 247, 212, 0.1), transparent 22%),
+    linear-gradient(180deg, #07111f 0%, #081523 100%);
+}
+
+body {
+  font-family: 'Sarabun', sans-serif;
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button, input, select {
+  font: inherit;
+}
