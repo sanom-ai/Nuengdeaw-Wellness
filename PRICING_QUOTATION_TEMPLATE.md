@@ -2,6 +2,16 @@
 
 เอกสารนี้เป็นต้นแบบสำหรับใช้ทำใบเสนอราคา Nuengdeaw Wellness ในเชิงพาณิชย์ สามารถปรับตัวเลขและขอบเขตงานตามลูกค้าแต่ละราย
 
+## Suggested Starting Packages
+
+- `Pilot / Demo Package` เริ่มต้น `149,000 บาท`
+- `Commercial Source Code License` เริ่มต้น `490,000 บาท`
+- `White-label / Custom Deployment` เริ่มต้น `790,000 บาท`
+- `Annual Support / Maintenance` เริ่มต้น `15% ต่อปี` ของมูลค่างาน
+- `Wearable Integration` เริ่มต้น `120,000 บาท` ต่ออุปกรณ์
+
+หมายเหตุ: ราคาจริงขึ้นอยู่กับ scope, customization, support, deployment, และ integration ที่ตกลงร่วมกัน
+
 ## Quotation Information
 
 - Quotation No.: ____________________
@@ -35,18 +45,19 @@
 
 ## Commercial Options Example
 
-### Option A: Source Code License Only
+### Option A: Pilot / Demo Package
+- ราคาเริ่มต้น 149,000 บาท
+- เหมาะสำหรับงาน demo, pilot, หรือใช้ภายในองค์กรในขอบเขตจำกัด
+- ไม่รวม white-label เต็มรูปแบบหรือ integration เชิงลึก
+
+### Option B: Commercial Source Code License
+- ราคาเริ่มต้น 490,000 บาท
 - เหมาะสำหรับลูกค้าที่มีทีมเทคนิคภายใน
 - ครอบคลุมสิทธิ์ใช้งานตามสัญญา
-- ไม่รวม deployment, customization, และ support ระยะยาว
-
-### Option B: License + Installation
-- รวม source code license
-- รวมติดตั้งและตั้งค่าระบบเริ่มต้น
-- เหมาะสำหรับองค์กรที่ต้องการเริ่มใช้งานเร็ว
+- ไม่รวม deployment, customization, และ support ระยะยาวเต็มรูปแบบ
 
 ### Option C: White-label / Custom Deployment
-- รวม source code license
+- ราคาเริ่มต้น 790,000 บาท
 - รวมงานปรับแบรนด์ ปรับ workflow และ integration ตามความต้องการ
 - เหมาะสำหรับองค์กรที่ต้องการใช้ภายใต้แบรนด์ของตนเอง
 
