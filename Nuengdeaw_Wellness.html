@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>น้องหนึ่งเดียว · Wellness Monitor</title>
+<title>Nuengdeaw Wellness v1.2</title>
 <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Share+Tech+Mono&family=Noto+Sans+Thai:wght@300;400;700;900&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -386,8 +386,155 @@ canvas.line-chart{width:100% !important;height:90px !important;}
   .result-actions .result-btn{flex:1 1 100%;}
 }
 </style>
+
+<style id="v12-visual-upgrade">
+body[data-ui="v12"]{
+  --bg:#0a1420;--bg2:#101c2a;--panel:rgba(10,20,32,.92);--panel2:rgba(15,28,42,.92);
+  --border:rgba(129,162,194,.10);--border2:rgba(129,162,194,.18);
+  --text:#edf4ff;--text2:#bfd0e5;--text3:#7f97b3;
+  --cyan:#39dbc8;--cyan2:#86fff0;--gold:#d3a55f;--gold2:#ffd89a;
+  --sh0:0 1px 3px rgba(0,0,0,.22);
+  --sh1:0 18px 40px rgba(0,0,0,.28),0 4px 14px rgba(0,0,0,.16);
+  background:
+    radial-gradient(circle at 18% 0%, rgba(53,130,197,.16), transparent 28%),
+    radial-gradient(circle at 82% 14%, rgba(57,219,200,.10), transparent 24%),
+    linear-gradient(180deg,#08131d 0%,#0a1521 58%,#09131d 100%);
+}
+body[data-ui="v12"]::before{
+  background-image:
+    linear-gradient(rgba(96,192,205,.04) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(96,192,205,.04) 1px,transparent 1px),
+    linear-gradient(rgba(96,192,205,.014) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(96,192,205,.014) 1px,transparent 1px);
+}
+body[data-ui="v12"] .topbar,
+body[data-ui="v12"] .left-panel,
+body[data-ui="v12"] .right-area,
+body[data-ui="v12"] .botbar,
+body[data-ui="v12"] .gauge,
+body[data-ui="v12"] .log-row,
+body[data-ui="v12"] .chart-card,
+body[data-ui="v12"] .stat-card,
+body[data-ui="v12"] .dist-wrap,
+body[data-ui="v12"] .tool-btn,
+body[data-ui="v12"] .mode-select,
+body[data-ui="v12"] .subject-select,
+body[data-ui="v12"] .subject-input,
+body[data-ui="v12"] .subject-btn,
+body[data-ui="v12"] .session-timer,
+body[data-ui="v12"] .state-pill,
+body[data-ui="v12"] .diag-action-btn,
+body[data-ui="v12"] .data-btn{
+  backdrop-filter:blur(14px) saturate(1.03);
+}
+body[data-ui="v12"] .topbar{
+  background:linear-gradient(180deg,rgba(11,22,35,.95),rgba(9,17,28,.92));
+  box-shadow:0 10px 24px rgba(0,0,0,.22), inset 0 1px 0 rgba(255,255,255,.04);
+}
+body[data-ui="v12"] .tb-logo svg{filter:drop-shadow(0 6px 16px rgba(57,219,200,.44));}
+body[data-ui="v12"] .tb-orbit{border-color:rgba(134,255,240,.20);}
+body[data-ui="v12"] .brand-name{color:#edf4ff;}
+body[data-ui="v12"] .brand-sub,
+body[data-ui="v12"] .tb-sys,
+body[data-ui="v12"] .btitle,
+body[data-ui="v12"] .gl,
+body[data-ui="v12"] .scan-count-lbl,
+body[data-ui="v12"] .data-status-note,
+body[data-ui="v12"] .tab,
+body[data-ui="v12"] .bot-l,
+body[data-ui="v12"] .bot-r,
+body[data-ui="v12"] .chart-label,
+body[data-ui="v12"] .stat-lbl,
+body[data-ui="v12"] .dist-pct,
+body[data-ui="v12"] .dist-lbl,
+body[data-ui="v12"] .log-lbl,
+body[data-ui="v12"] .log-ts{color:#7f97b3;}
+body[data-ui="v12"] .tb-sep{background:rgba(129,162,194,.16);}
+body[data-ui="v12"] .session-timer,
+body[data-ui="v12"] .state-pill,
+body[data-ui="v12"] .tool-btn,
+body[data-ui="v12"] .mode-select,
+body[data-ui="v12"] .subject-select,
+body[data-ui="v12"] .subject-input,
+body[data-ui="v12"] .subject-btn{
+  background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));
+  border-color:rgba(129,162,194,.16);
+  color:#d9e8fa;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+}
+body[data-ui="v12"] .mode-select option,
+body[data-ui="v12"] .subject-select option{background:#122031;color:#edf4ff;}
+body[data-ui="v12"] .tool-print{color:#ffd7a0;border-color:rgba(211,165,95,.24);background:linear-gradient(135deg,rgba(211,165,95,.14),rgba(211,165,95,.05));}
+body[data-ui="v12"] .tool-send{color:#c8dbff;border-color:rgba(110,146,255,.24);background:linear-gradient(135deg,rgba(110,146,255,.14),rgba(110,146,255,.05));}
+body[data-ui="v12"] .tool-config{color:#e0d8ff;border-color:rgba(149,126,255,.24);background:linear-gradient(135deg,rgba(149,126,255,.12),rgba(149,126,255,.05));}
+body[data-ui="v12"] .mode-select:hover,
+body[data-ui="v12"] .mode-select:focus,
+body[data-ui="v12"] .subject-select:hover,
+body[data-ui="v12"] .subject-select:focus,
+body[data-ui="v12"] .subject-input:hover,
+body[data-ui="v12"] .subject-input:focus,
+body[data-ui="v12"] .subject-btn:hover,
+body[data-ui="v12"] .tool-btn:hover,
+body[data-ui="v12"] .diag-action-btn:hover,
+body[data-ui="v12"] .data-btn:hover{
+  border-color:rgba(134,255,240,.36);
+  box-shadow:0 0 0 2px rgba(57,219,200,.10), inset 0 1px 0 rgba(255,255,255,.05);
+}
+body[data-ui="v12"] .state-pill{color:#f4d8a9;}
+body[data-ui="v12"] .state-dot{background:var(--gold);box-shadow:0 0 10px rgba(211,165,95,.48);}
+body[data-ui="v12"] .left-panel{background:linear-gradient(180deg,rgba(9,18,29,.96),rgba(10,20,31,.94));}
+body[data-ui="v12"] .right-area{background:linear-gradient(180deg,rgba(8,18,28,.90),rgba(8,18,28,.94));}
+body[data-ui="v12"] .pblock{border-bottom-color:rgba(129,162,194,.08);}
+body[data-ui="v12"] .bpip{background:linear-gradient(180deg,var(--gold2),var(--cyan));}
+body[data-ui="v12"] .gauge,
+body[data-ui="v12"] .log-row,
+body[data-ui="v12"] .chart-card,
+body[data-ui="v12"] .stat-card,
+body[data-ui="v12"] .dist-wrap{
+  background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));
+  border-color:rgba(129,162,194,.12);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04), 0 12px 24px rgba(0,0,0,.14);
+}
+body[data-ui="v12"] .gbar,
+body[data-ui="v12"] .btrack,
+body[data-ui="v12"] .dist-track,
+body[data-ui="v12"] .sbar-w{background:rgba(255,255,255,.05);border-color:rgba(129,162,194,.08);}
+body[data-ui="v12"] .gv,
+body[data-ui="v12"] .chart-latest,
+body[data-ui="v12"] .stat-val,
+body[data-ui="v12"] .result-title,
+body[data-ui="v12"] .idle-h1{color:#edf4ff;}
+body[data-ui="v12"] .tab-bar{background:linear-gradient(180deg,rgba(10,19,30,.92),rgba(9,18,28,.88));border-bottom-color:rgba(129,162,194,.10);}
+body[data-ui="v12"] .tab.active{color:var(--gold2);border-bottom-color:var(--cyan2);}
+body[data-ui="v12"] .idle-wrap::before{
+  content:'';position:absolute;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(81,211,255,.10) 0%,rgba(57,219,200,.08) 24%,rgba(157,124,255,.04) 42%,rgba(7,17,28,0) 68%);
+  filter:blur(8px);pointer-events:none;
+}
+body[data-ui="v12"] .hero-logo{filter:drop-shadow(0 0 28px rgba(57,219,200,.28));}
+body[data-ui="v12"] .logo-stage.scan-trigger::after{
+  background:linear-gradient(180deg,rgba(9,19,30,.94),rgba(10,22,34,.90));
+  border-color:rgba(134,255,240,.24);
+  color:var(--cyan2);
+  box-shadow:0 10px 18px rgba(0,0,0,.18);
+}
+body[data-ui="v12"] .idle-h1{text-shadow:0 0 18px rgba(57,219,200,.08);}
+body[data-ui="v12"] .idle-thai{color:var(--gold2);}
+body[data-ui="v12"] .idle-sub{color:#c6d5e5;}
+body[data-ui="v12"] .idle-badge{background:rgba(57,219,200,.08);border-color:rgba(134,255,240,.22);color:var(--cyan2);}
+body[data-ui="v12"] .result-modal{background:linear-gradient(180deg,rgba(10,20,31,.98),rgba(11,23,36,.96));border-color:rgba(129,162,194,.16);}
+body[data-ui="v12"] .result-head{border-bottom-color:rgba(129,162,194,.10);}
+body[data-ui="v12"] .result-kicker{color:var(--cyan2);}
+body[data-ui="v12"] .result-sub,
+body[data-ui="v12"] .result-body,
+body[data-ui="v12"] .no-data,
+body[data-ui="v12"] .ssub{color:#bfd0e5;}
+body[data-ui="v12"] .botbar{background:linear-gradient(180deg,rgba(8,18,29,.94),rgba(8,18,29,.90));}
+body[data-ui="v12"] .live-dot{background:var(--cyan2);box-shadow:0 0 10px rgba(134,255,240,.52);}
+body[data-ui="v12"] .clinic-policy{background:rgba(58,43,15,.90);color:#f4d8a9;border-color:rgba(211,165,95,.35);}
+</style>
 </head>
-<body>
+<body data-ui="v12">
 <div class="shell">
 
 <!-- TOP BAR -->
